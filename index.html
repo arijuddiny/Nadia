@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🧠 Meta & SEO -->
+    <!-- 🛠️ TUTORIAL EDIT: Ubah teks di dalam tag <title> dan "content" di bawah ini agar sesuai dengan data Anda untuk keperluan pencarian Google (SEO) -->
+    <title>Nadia Syafa’at | Dosen Manajemen FEB UJB | Akademisi & Peneliti</title>
+    <meta name="description" content="Profil resmi Nadia Syafa’at, dosen Manajemen FEB Universitas Janabadra. Fokus pada riset berbasis data, evaluasi kinerja, dan pengembangan sistem manajemen modern.">
+    <meta name="keywords" content="Nadia Syafaat, Dosen Manajemen UJB, FEB UJB, Universitas Janabadra, akademisi manajemen, penelitian manajemen, dosen Yogyakarta">
+    <meta name="author" content="Nadia Syafa’at">
+    <meta property="og:title" content="Nadia Syafa’at | Academic Profile">
+    <meta property="og:description" content="Dosen Manajemen FEB UJB dengan fokus pada riset, inovasi, dan pengembangan sistem berbasis data.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://namadomain.com/nadia-syafaat">
+
+    <!-- Google Fonts: Quicksand (Imut & Bulat) & Nunito (Lembut untuk dibaca) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config for Super Cute Feminine Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    /* 🛠️ TUTORIAL EDIT: Jika ingin mengubah tema warna, ganti kode HEX (misal: #F472B6) di bawah ini */
+                    colors: {
+                        cute: {
+                            bg: '#FFF0F5',        /* Lavender Blush - sangat lembut */
+                            pink: '#F472B6',      /* Pink cerah imut */
+                            pinklight: '#FCE7F3', /* Baby pink */
+                            lilac: '#C084FC',     /* Ungu pastel */
+                            lilaclight: '#F3E8FF',/* Ungu sangat muda */
+                            peach: '#FFDAB9',     /* Peach lembut */
+                            text: '#4C1D95',      /* Ungu tua untuk teks agar tidak hitam pekat */
+                            muted: '#9D174D'      /* Pink tua untuk teks sekunder */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        heading: ['Quicksand', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'wiggle': 'wiggle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: theme('colors.cute.text');
+            background-color: theme('colors.cute.bg');
+            background-image: radial-gradient(theme('colors.cute.pinklight') 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        ::selection {
+            background-color: theme('colors.cute.pink');
+            color: #fff;
+        }
+
+        /* Glassmorphism Super Imut */
+        .glass-cute {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 30px rgba(244, 114, 182, 0.1);
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        
+        /* Animations for SVG Girl */
+        @keyframes steamRise {
+            0% { transform: translateY(0) scale(1) rotate(-5deg); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-20px) scale(1.2) rotate(5deg); opacity: 0; }
+        }
+        .anim-steam path:nth-child(1) { animation: steamRise 3s infinite ease-in; }
+        .anim-steam path:nth-child(2) { animation: steamRise 3s infinite ease-in 1.5s; }
+        
+        @keyframes blinkOpen {
+            0%, 95%, 98%, 100% { opacity: 1; }
+            96%, 97% { opacity: 0; }
+        }
+        @keyframes blinkClosed {
+            0%, 95%, 98%, 100% { opacity: 0; }
+            96%, 97% { opacity: 1; }
+        }
+        .eyes-open { animation: blinkOpen 5s infinite; }
+        .eyes-closed { animation: blinkClosed 5s infinite; }
+
+        /* Custom Scrollbar Pink */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: theme('colors.cute.bg'); }
+        ::-webkit-scrollbar-thumb { background: theme('colors.cute.pinklight'); border-radius: 10px; border: 2px solid theme('colors.cute.bg'); }
+        ::-webkit-scrollbar-thumb:hover { background: theme('colors.cute.pink'); }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- SVG Sparkle Decoration -->
+    <svg style="display:none;">
+        <symbol id="sparkle" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+        </symbol>
+    </svg>
+
+    <!-- NAVBAR CUTE -->
+    <nav class="fixed w-full top-0 z-50 glass-cute border-b-0 transition-all duration-300 my-2 mx-4 sm:mx-8 md:mx-auto md:max-w-6xl rounded-full left-0 right-0 py-1 px-4">
+        <div class="flex justify-between items-center h-14 sm:h-16">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2.5 group pl-2">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-cute-pink to-cute-lilac rounded-full flex items-center justify-center text-white font-heading font-bold text-lg shadow-[0_4px_10px_rgba(244,114,182,0.4)] group-hover:animate-wiggle">
+                    <!-- 🛠️ TUTORIAL EDIT: Inisial Logo Navbar (Ubah huruf N) -->
+                    N
+                </div>
+                <!-- 🛠️ TUTORIAL EDIT: Teks Logo Navbar -->
+                <span class="font-heading font-bold text-lg sm:text-xl text-cute-text tracking-tight group-hover:text-cute-pink transition-colors">Nadia.</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <!-- 🛠️ TUTORIAL EDIT: Ganti teks menu dan target link (#id) di sini -->
+                <a href="#profil" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Profil</a>
+                <a href="#penelitian" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Penelitian</a>
+                <a href="#publikasi" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Publikasi</a>
+                <a href="#pengajaran" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Pengajaran</a>
+                <a href="#kontak" class="bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-6 py-2 rounded-full text-sm font-bold hover:shadow-[0_8px_20px_rgba(244,114,182,0.4)] hover:-translate-y-0.5 transition-all">
+                    Sapa Nadia 💕
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger & Close) -->
+            <div class="md:hidden flex items-center pr-2">
+                <button id="mobile-menu-btn" class="text-cute-text hover:text-cute-pink focus:outline-none bg-cute-pinklight p-2 rounded-full transition-colors relative w-10 h-10 flex items-center justify-center">
+                    <i data-lucide="menu" id="menu-icon-open" class="w-5 h-5 absolute transition-all duration-300"></i>
+                    <i data-lucide="x" id="menu-icon-close" class="w-5 h-5 absolute opacity-0 scale-50 transition-all duration-300"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel (Animated) -->
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 mt-3 glass-cute rounded-3xl p-4 shadow-xl opacity-0 invisible translate-y-[-10px] transition-all duration-300">
+            <div class="flex flex-col space-y-2 text-center">
+                <!-- 🛠️ TUTORIAL EDIT: Jangan lupa ganti juga menu versi HP ini jika Anda mengubah menu Desktop di atas -->
+                <a href="#profil" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Profil</a>
+                <a href="#penelitian" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Penelitian</a>
+                <a href="#publikasi" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Publikasi</a>
+                <a href="#pengajaran" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Pengajaran</a>
+                <a href="#kontak" class="mobile-link mt-2 px-4 py-3 text-sm font-bold text-white bg-gradient-to-r from-cute-pink to-cute-lilac rounded-2xl shadow-md">Sapa Nadia 💕</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION IMUT -->
+    <section id="hero" class="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
+        <!-- Ornamen Bulat Pastel Mengambang -->
+        <div class="absolute top-10 right-10 w-[300px] h-[300px] bg-cute-pinklight rounded-full blur-[60px] opacity-70 animate-float z-0"></div>
+        <div class="absolute bottom-20 left-10 w-[250px] h-[250px] bg-cute-lilaclight rounded-full blur-[60px] opacity-70 animate-float-delayed z-0"></div>
+        <div class="absolute top-1/3 left-1/4 w-4 h-4 text-cute-pink animate-pulse z-0"><svg><use href="#sparkle"></use></svg></div>
+        <div class="absolute top-1/4 right-1/4 w-6 h-6 text-cute-lilac animate-pulse delay-100 z-0"><svg><use href="#sparkle"></use></svg></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+            <div class="flex flex-col-reverse lg:flex-row gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <h1 class="reveal delay-100 text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-cute-text leading-[1.2] mb-5 relative">
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti sapaan dan Nama di Sini -->
+                        Hai, saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-cute-pink to-cute-lilac">Nadia Syafa’at</span> 🌸
+                        
+                        <!-- Guratan Estetik (Swirl) -->
+                        <svg class="absolute -top-6 -right-8 w-12 h-12 text-cute-pink opacity-60 hidden sm:block animate-wiggle" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 80 Q 50 10, 80 80 T 100 20" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </h1>
+                    
+                    <!-- 🛠️ TUTORIAL EDIT: Ganti Gelar dan Deskripsi Pendek di sini -->
+                    <p class="reveal delay-200 text-lg text-cute-muted mb-8 font-medium max-w-lg mx-auto lg:mx-0 relative">
+                        S.E., M.M. — Membangun generasi manajer yang cerdas, berbasis data, dan memiliki pemikiran strategis yang modern.
+                    </p>
+
+                    <!-- Cute Value Proposition -->
+                    <div class="reveal delay-300 glass-cute p-5 mb-8 rounded-3xl max-w-xl mx-auto lg:mx-0 relative">
+                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-cute-pink text-white rounded-full flex items-center justify-center animate-wiggle shadow-md">
+                            <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti kutipan filosofi/value proposition -->
+                        <p class="text-sm font-bold text-cute-text italic">
+                            "Menggabungkan teori akademik dengan sentuhan praktis untuk menciptakan solusi manajemen yang relevan di era digital."
+                        </p>
+                    </div>
+                    
+                    <div class="reveal delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <!-- 🛠️ TUTORIAL EDIT: Tautan tombol hero -->
+                        <a href="#publikasi" class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-8 py-3.5 rounded-full font-bold hover:shadow-[0_10px_25px_rgba(244,114,182,0.4)] hover:-translate-y-1 transition-all">
+                            Lihat Publikasi <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#kontak" class="inline-flex justify-center items-center gap-2 bg-white text-cute-pink border-2 border-cute-pinklight px-8 py-3.5 rounded-full font-bold hover:bg-cute-pinklight transition-all shadow-sm hover:-translate-y-1">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Graphic (Super Cute Frame) -->
+                <div class="w-full lg:w-1/2 flex justify-center reveal mt-8 lg:mt-0 relative">
+                    <!-- Guratan Panah Imut -->
+                    <svg class="absolute -top-4 right-8 w-16 h-16 text-cute-lilac opacity-70 hidden lg:block" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 80 C 20 20, 70 20, 80 50" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6" class="animate-pulse"/>
+                        <path d="M70 40 L 80 50 L 90 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <!-- Image Wrapper -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Decorative Spinning Dashed Frame -->
+                        <div class="absolute inset-[-15px] border-4 border-dashed border-cute-pink rounded-full opacity-30 animate-spin-slow"></div>
+                        
+                        <!-- Solid Pink Backdrop Circle -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cute-pinklight to-cute-lilaclight rounded-full transform translate-x-4 translate-y-4"></div>
+                        
+                        <!-- Main Image Container -->
+                        <!-- Diperbarui agar objek cover benar-benar mengisi wrapper melingkar -->
+                        <div class="absolute inset-0 bg-white rounded-full shadow-xl overflow-hidden border-8 border-white z-10 block">
+                            <!-- 🛠️ TUTORIAL EDIT: GANTI FOTO DI SINI -->
+                            <!-- Pastikan file gambar Anda (misal: fotoku.jpg) diletakkan pada folder yang sama dengan file HTML ini. -->
+                            <!-- Ganti src="nadia.jpeg" menjadi src="nama-file-anda.jpg" -->
+                            <img src="nadia.jpeg" 
+                                 alt="Nadia Syafa'at" 
+                                 class="w-full h-full object-cover object-center"
+                                 onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Nadia+Syafaat&background=FCE7F3&color=F472B6&size=512&font-size=0.33';">
+                        </div>
+
+                        <!-- Floating Badges Cute -->
+                        <div class="absolute -bottom-4 right-0 sm:-right-4 bg-white p-3 rounded-2xl shadow-lg border-2 border-cute-pinklight flex items-center gap-3 z-20 animate-float-delayed">
+                            <div class="w-10 h-10 bg-cute-lilaclight rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="building-2" class="w-5 h-5 text-cute-lilac"></i>
+                            </div>
+                            <!-- 🛠️ TUTORIAL EDIT: Ganti teks Badge mengambang di bawah foto -->
+                            <div class="pr-2">
+                                <p class="text-[10px] text-cute-muted font-bold uppercase whitespace-nowrap">Afiliasi</p>
+                                <p class="text-xs font-heading font-bold text-cute-text whitespace-nowrap">FEB UJB</p>
+                            </div>
+                        </div>
+
+                        <!-- Sparkle overlay -->
+                        <div class="absolute top-4 left-4 w-8 h-8 text-cute-pink z-20 animate-wiggle"><svg><use href="#sparkle"></use></svg></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION FEMININ -->
+    <section id="profil" class="py-20 lg:py-28 relative">
+        <!-- Wavy divider top (optional aesthetic) -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-[calc(100%+1.3px)] h-[40px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white rounded-[3rem] p-8 sm:p-12 shadow-[0_20px_50px_rgba(244,114,182,0.05)] border-2 border-cute-pinklight relative z-10 reveal">
+            <!-- Guratan Hati Background -->
+            <svg class="absolute top-10 right-10 w-24 h-24 text-cute-bg z-0 pointer-events-none hidden sm:block" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 80 C 10 50, 10 20, 30 10 C 40 5, 50 20, 50 20 C 50 20, 60 5, 70 10 C 90 20, 90 50, 50 80 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+            </svg>
+            
+            <div class="absolute -top-6 sm:-top-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-6 py-2 rounded-full font-heading font-bold shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <i data-lucide="user" class="w-4 h-4"></i> Profil Singkat
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-6">
+                <!-- Highlight Title -->
+                <div class="lg:col-span-5 text-center lg:text-left">
+                    <!-- 🛠️ TUTORIAL EDIT: Judul Profil (H2) -->
+                    <h2 class="text-3xl sm:text-4xl font-heading font-bold text-cute-text mb-4 leading-snug">
+                        Membangun Ekosistem <br class="hidden sm:block"> <span class="text-cute-pink">Manajemen Modern</span>
+                    </h2>
+                    <!-- 🛠️ TUTORIAL EDIT: Sub-Judul Profil -->
+                    <p class="text-lg font-bold text-cute-lilac">
+                        Riset Berbasis Data & Inovasi Sistem.
+                    </p>
+                </div>
+
+                <!-- Content -->
+                <!-- 🛠️ TUTORIAL EDIT: Paragraf deskripsi profil diri -->
+                <div class="lg:col-span-7 space-y-4 text-cute-muted font-medium text-base sm:text-lg text-center lg:text-left">
+                    <p>
+                        Nadia Syafa’at adalah dosen pada Program Studi Manajemen Fakultas Ekonomi dan Bisnis Universitas Janabadra yang berfokus pada pengembangan ilmu manajemen berbasis riset dan pendekatan empiris.
+                    </p>
+                    <p>
+                        Dengan pendekatan akademik yang feminin namun tegas dan kuat, ia mengintegrasikan teori dan praktik untuk menghasilkan pembelajaran yang relevan dengan kebutuhan industri modern. Aktivitas akademiknya mencakup penelitian, publikasi ilmiah, serta pengembangan model manajemen berbasis data.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-3">
+                        <!-- 🛠️ TUTORIAL EDIT: Kata kunci keunggulan / highlight -->
+                        <div class="bg-cute-pinklight text-cute-pink px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Berbasis Data
+                        </div>
+                        <div class="bg-cute-lilaclight text-cute-lilac px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Riset Empiris
+                        </div>
+                        <div class="bg-cute-pinklight text-cute-pink px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Solusi Relevan
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH INTEREST CUTE GRID -->
+    <section id="penelitian" class="py-20 bg-cute-bg relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <!-- 🛠️ TUTORIAL EDIT: Ubah judul bagian Penelitian -->
+                <span class="text-cute-pink font-bold tracking-widest uppercase text-sm mb-2 block">Minat Keahlian</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-cute-text mb-4">Penelitian & Area Riset 🎀</h2>
+                <p class="text-cute-muted font-medium px-4">Kajian strategis dengan sentuhan analitik untuk pengembangan manajemen modern.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- 🛠️ TUTORIAL EDIT: KARTU MINAT RISET 1 -->
+                <!-- Untuk mengubah ikon, ganti teks di dalam data-lucide="..." (Cari nama icon di lucide.dev) -->
+                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-pinklight transition-colors border-2 border-cute-pinklight">
+                        <i data-lucide="target" class="w-6 h-6 text-cute-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Manajemen Strategis</h3>
+                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Analisis mendalam mengenai perumusan, implementasi, dan evaluasi keputusan lintas fungsional yang memastikan organisasi mencapai tujuannya.</p>
+                </div>
+
+                <!-- 🛠️ TUTORIAL EDIT: KARTU MINAT RISET 2 -->
+                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-100">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-lilaclight transition-colors border-2 border-cute-lilaclight">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-cute-lilac"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Keputusan Berbasis Data</h3>
+                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Pemanfaatan analitik dan metrik objektif yang cantik untuk memandu arah perusahaan, mengurangi bias, dan meningkatkan akurasi.</p>
+                </div>
+
+                <!-- 🛠️ TUTORIAL EDIT: KARTU MINAT RISET 3 -->
+                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-200">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-pinklight transition-colors border-2 border-cute-pinklight">
+                        <i data-lucide="activity" class="w-6 h-6 text-cute-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Evaluasi Kinerja</h3>
+                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Pengembangan indikator dan metode pengukuran komprehensif untuk menilai efektivitas dan efisiensi operasional secara elegan.</p>
+                </div>
+
+                <!-- 🛠️ TUTORIAL EDIT: KARTU MINAT RISET 4 -->
+                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal lg:col-span-1">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-lilaclight transition-colors border-2 border-cute-lilaclight">
+                        <i data-lucide="lightbulb" class="w-6 h-6 text-cute-lilac"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Sistem & Inovasi</h3>
+                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Studi tentang adaptasi struktur baru dan praktik inovatif dalam merespon perubahan lingkungan bisnis yang dinamis.</p>
+                </div>
+
+                <!-- 🛠️ TUTORIAL EDIT: KARTU MINAT RISET 5 (Ini dibikin sedikit lebih lebar "col-span-2") -->
+                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-100 lg:col-span-2 bg-gradient-to-br from-white to-cute-pinklight/30">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border-2 border-cute-pink">
+                        <i data-lucide="users" class="w-6 h-6 text-cute-pink"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Perilaku Organisasi</h3>
+                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Investigasi empiris terhadap dinamika individu dan kelompok di dalam struktur organisasi, berfokus pada motivasi, kepemimpinan, dan budaya kerja guna meningkatkan kinerja keseluruhan yang harmonis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS CTA (PASTEL GRADIENT) -->
+    <section id="publikasi" class="py-24 relative overflow-hidden">
+        <!-- Background Gradient Mulus -->
+        <div class="absolute inset-0 bg-gradient-to-br from-cute-pink via-purple-300 to-cute-lilac opacity-90"></div>
+        <!-- Bubble decorations -->
+        <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full mix-blend-overlay blur-xl opacity-50 animate-float"></div>
+        <div class="absolute bottom-10 right-20 w-48 h-48 bg-white rounded-full mix-blend-overlay blur-2xl opacity-40 animate-float-delayed"></div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center reveal glass-cute !bg-white/20 !border-white/40 p-8 sm:p-14 rounded-[3rem]">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg transform rotate-[-10deg] hover:rotate-0 transition-transform">
+                <i data-lucide="book-open" class="w-10 h-10 text-cute-pink"></i>
+            </div>
+            
+            <!-- 🛠️ TUTORIAL EDIT: Judul dan Deskripsi Tautan Google Scholar -->
+            <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6 drop-shadow-md leading-tight">
+                Publikasi & Karya Ilmiah ✨
+            </h2>
+            
+            <p class="text-white font-medium text-base sm:text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto drop-shadow-sm px-2">
+                Jelajahi berbagai kontribusi penelitian yang berfokus pada pengembangan sistem, evaluasi, dan pendekatan manajemen berbasis bukti (*evidence-based*).
+            </p>
+            
+            <!-- 🛠️ TUTORIAL EDIT: Ganti tautan (href) di bawah ini dengan URL profil Google Scholar / Sinta / Orcid Anda -->
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-white text-cute-pink px-6 sm:px-8 py-4 rounded-full font-heading font-bold text-sm sm:text-lg hover:shadow-[0_10px_30px_rgba(255,255,255,0.4)] hover:-translate-y-1 transition-all w-full sm:w-auto">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.8 3.8v5.8h2.4v-4l4.8 3.8 12-9.5L12 0z"/></svg>
+                Kunjungi Google Scholar
+            </a>
+        </div>
+    </section>
+
+    <!-- TEACHING & COLLABORATION (CUTE CARDS) -->
+    <section class="py-20 lg:py-28 bg-white relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Teaching Column -->
+                <div id="pengajaran" class="reveal">
+                    <div class="inline-flex items-center gap-3 mb-8 bg-cute-pinklight px-5 py-2 rounded-full">
+                        <i data-lucide="graduation-cap" class="w-6 h-6 text-cute-pink"></i>
+                        <h2 class="text-2xl font-heading font-bold text-cute-pink">Pengajaran</h2>
+                    </div>
+                    <!-- 🛠️ TUTORIAL EDIT: Pengantar mata kuliah -->
+                    <p class="text-cute-muted font-bold mb-6 pl-2">Mata kuliah utama yang diampu di FEB UJB:</p>
+                    
+                    <ul class="space-y-4">
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti list mata kuliah (dalam tag <h4>) -->
+                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
+                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
+                                <i data-lucide="layout-grid" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Manajemen Strategis</h4>
+                        </li>
+                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
+                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
+                                <i data-lucide="settings" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Manajemen Operasional</h4>
+                        </li>
+                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
+                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
+                                <i data-lucide="microscope" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Metodologi Penelitian</h4>
+                        </li>
+                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
+                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
+                                <i data-lucide="network" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Perilaku Organisasi</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Collaboration Column -->
+                <div id="kolaborasi" class="reveal delay-100">
+                    <div class="inline-flex items-center gap-3 mb-8 bg-cute-lilaclight px-5 py-2 rounded-full">
+                        <i data-lucide="handshake" class="w-6 h-6 text-cute-lilac"></i>
+                        <h2 class="text-2xl font-heading font-bold text-cute-lilac">Kolaborasi 🤝</h2>
+                    </div>
+                    <p class="text-cute-muted font-bold mb-6 pl-2">Terbuka untuk inisiatif akademik & profesional:</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti item kolaborasi di dalam <h4> -->
+                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
+                            <i data-lucide="flask-conical" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
+                            <h4 class="font-bold text-cute-text text-sm">Penelitian Kolaboratif</h4>
+                        </div>
+                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
+                            <i data-lucide="presentation" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
+                            <h4 class="font-bold text-cute-text text-sm">Seminar & Workshop</h4>
+                        </div>
+                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
+                            <i data-lucide="messages-square" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
+                            <h4 class="font-bold text-cute-text text-sm">Konsultasi Akademik</h4>
+                        </div>
+                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
+                            <i data-lucide="book-copy" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
+                            <h4 class="font-bold text-cute-text text-sm">Pengembangan Kurikulum</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER CUTE -->
+    <footer id="kontak" class="bg-cute-pinklight pt-20 pb-10 relative overflow-hidden rounded-t-[3rem] mt-10">
+        <!-- Floating hearts in footer -->
+        <i data-lucide="heart" class="absolute top-10 left-10 sm:left-20 w-8 h-8 text-white opacity-50 animate-float"></i>
+        <i data-lucide="heart" class="absolute top-20 right-10 sm:right-32 w-12 h-12 text-cute-pink opacity-20 animate-float-delayed"></i>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="glass-cute bg-white/50 border-white p-6 sm:p-8 md:p-12 rounded-[3rem] grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12 reveal shadow-lg">
+                
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-heading font-bold text-cute-pink mb-4">Sapa Nadia 💌</h2>
+                    <p class="text-cute-muted font-medium mb-8 max-w-sm mx-auto md:mx-0">Terbuka untuk diskusi mengenai riset, kolaborasi akademik, atau sekadar bertukar pikiran.</p>
+                    
+                    <div class="space-y-4 sm:space-y-5 flex flex-col items-center md:items-start">
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti "mailto:..." dan alamat email untuk tombol Email -->
+                        <a href="mailto:nadia@ujb.ac.id" class="flex items-center gap-4 text-cute-text hover:text-cute-pink transition-colors group bg-white py-3 px-6 rounded-full shadow-sm w-full sm:w-fit">
+                            <div class="w-8 h-8 bg-cute-pinklight rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4 group-hover:text-white"></i>
+                            </div>
+                            <span class="font-bold truncate">nadia@ujb.ac.id</span>
+                        </a>
+                        
+                        <!-- 🛠️ TUTORIAL EDIT: Ganti atribut href="..." untuk link LinkedIn -->
+                        <a href="#" target="_blank" class="flex items-center gap-4 text-cute-text hover:text-[#0A66C2] transition-colors group bg-white py-3 px-6 rounded-full shadow-sm w-full sm:w-fit">
+                            <div class="w-8 h-8 bg-blue-50 rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#0A66C2] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4 text-[#0A66C2] group-hover:text-white"></i>
+                            </div>
+                            <span class="font-bold truncate">linkedin.com/in/nadia-syafaat</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CTA Box -->
+                <div class="bg-white p-6 sm:p-8 rounded-[2.5rem] shadow-md text-center border-2 border-cute-bg relative overflow-hidden">
+                    <!-- Guratan Aksesoris di CTA Box -->
+                    <svg class="absolute -bottom-6 -right-6 w-24 h-24 text-cute-pinklight opacity-50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" stroke-dasharray="10 10"/>
+                    </svg>
+
+                    <!-- Animasi SVG Cewek Cantik Minum Coffee -->
+                    <div class="mx-auto mb-2 flex justify-center relative z-10">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 sm:w-28 sm:h-28 drop-shadow-md">
+                            <!-- Body/Sweater -->
+                            <path d="M40 200 C40 130 160 130 160 200 Z" fill="#FCE7F3" />
+                            <path d="M80 130 L120 130 L100 160 Z" fill="#F472B6" opacity="0.2"/>
+                            
+                            <!-- Hair Back -->
+                            <path d="M50 100 C30 180 60 200 100 200 C140 200 170 180 150 100 Z" fill="#4C1D95" />
+                            
+                            <!-- Face -->
+                            <path d="M65 100 C65 60 135 60 135 100 C135 130 115 140 100 140 C85 140 65 130 65 100 Z" fill="#FFE4E1" />
+                            
+                            <!-- Blush -->
+                            <circle cx="78" cy="108" r="7" fill="#F472B6" opacity="0.5" />
+                            <circle cx="122" cy="108" r="7" fill="#F472B6" opacity="0.5" />
+                            
+                            <!-- Eyes (Blinking) -->
+                            <g class="eyes-open">
+                                <path d="M72 100 Q78 95 84 100" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                                <path d="M116 100 Q122 95 128 100" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                                <path d="M72 100 L68 97" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
+                                <path d="M128 100 L132 97" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
+                            </g>
+                            <g class="eyes-closed" opacity="0">
+                                <path d="M72 100 Q78 103 84 100" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                                <path d="M116 100 Q122 103 128 100" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                            </g>
+
+                            <!-- Front Hair / Bangs -->
+                            <path d="M60 90 C60 50 140 50 140 90 C130 60 70 60 60 90 Z" fill="#4C1D95" />
+                            <path d="M100 50 C120 70 140 70 140 90 C120 80 110 50 100 50 Z" fill="#5B21B6" opacity="0.3"/> <!-- Hair highlight -->
+                            
+                            <!-- Mug -->
+                            <rect x="80" y="118" width="40" height="30" rx="4" fill="#FFFFFF" stroke="#C084FC" stroke-width="2" />
+                            <path d="M120 125 C132 125 132 135 120 135" stroke="#C084FC" stroke-width="2" fill="none" stroke-linecap="round" />
+                            <path d="M90 128 C95 133 105 133 110 128" stroke="#FCE7F3" stroke-width="2" stroke-linecap="round" fill="none" /> 
+                            
+                            <!-- Hands -->
+                            <circle cx="76" cy="125" r="7" fill="#FFE4E1" />
+                            <circle cx="124" cy="125" r="7" fill="#FFE4E1" />
+
+                            <!-- Steam -->
+                            <g class="anim-steam" stroke="#C084FC" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7">
+                                <path d="M90 105 Q85 90 95 75" />
+                                <path d="M110 110 Q115 95 105 80" />
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <!-- 🛠️ TUTORIAL EDIT: Teks CTA (Call to Action) -->
+                    <h3 class="text-xl font-heading font-bold text-cute-text mb-2 relative z-10">Mari Ngopi & Diskusi</h3>
+                    <p class="text-cute-muted text-sm font-medium mb-6 relative z-10 px-2">Jangan ragu untuk mengirim pesan untuk ngobrol santai seputar manajemen & riset.</p>
+                    <!-- 🛠️ TUTORIAL EDIT: Jangan lupa ganti mailto yang ini juga! -->
+                    <a href="mailto:nadia@ujb.ac.id" class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-8 py-3.5 rounded-full font-bold hover:shadow-lg hover:-translate-y-1 transition-all w-full relative z-10">
+                        <i data-lucide="send" class="w-4 h-4"></i> Kirim Pesan
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- 🛠️ TUTORIAL EDIT: Bagian hak cipta dan afiliasi -->
+            <div class="border-t-2 border-white pt-6 pb-4 flex flex-col sm:flex-row justify-between items-center gap-4 reveal delay-100">
+                <p class="text-cute-muted font-bold text-xs sm:text-sm flex items-center gap-1 text-center">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Nadia Syafa'at. Dibuat dengan <i data-lucide="heart" class="w-4 h-4 text-cute-pink fill-current"></i>
+                </p>
+                <p class="text-cute-pink font-bold text-xs sm:text-sm bg-white px-4 py-1.5 rounded-full shadow-sm text-center">
+                    FEB, Universitas Janabadra
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Mobile Menu Logic with Smooth Transitions and Icon Swapping
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+        let isMenuOpen = false;
+
+        btn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                // Show menu panel
+                menu.classList.remove('opacity-0', 'invisible', 'translate-y-[-10px]');
+                menu.classList.add('opacity-100', 'visible', 'translate-y-0');
+                
+                // Swap icon to X
+                iconOpen.classList.add('opacity-0', 'scale-50');
+                iconClose.classList.remove('opacity-0', 'scale-50');
+            } else {
+                // Hide menu panel
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
+                
+                // Swap icon back to Menu
+                iconClose.classList.add('opacity-0', 'scale-50');
+                iconOpen.classList.remove('opacity-0', 'scale-50');
+            }
+        });
+
+        // Close mobile menu on clicking any link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                
+                // Hide menu panel
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
+                
+                // Swap icon back to Menu
+                iconClose.classList.add('opacity-0', 'scale-50');
+                iconOpen.classList.remove('opacity-0', 'scale-50');
+            });
+        });
+
+        // 3. Scroll Reveal Animation Logic
+        const observerOptions = { 
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
