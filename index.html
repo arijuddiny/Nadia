@@ -4,65 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 🧠 Meta & SEO -->
-    <!-- 🛠️ TUTORIAL EDIT: Ubah teks di dalam tag <title> dan "content" di bawah ini agar sesuai dengan data Anda untuk keperluan pencarian Google (SEO) -->
-    <title>Nadia Syafa’at | Dosen Manajemen FEB UJB | F&B Entrepreneur</title>
-    <meta name="description" content="Profil resmi Nadia Syafa’at, dosen Manajemen FEB Universitas Janabadra & CFO Soigné Culinary Consultant. Fokus pada riset, evaluasi kinerja, dan kewirausahaan F&B.">
-    <meta name="keywords" content="Nadia Syafaat, Dosen Manajemen UJB, FEB UJB, Universitas Janabadra, akademisi manajemen, konsultan kuliner, Soigne, F&B entrepreneur">
+    <!-- SEO Meta Tags -->
+    <title>Nadia Syafa’at, S.E., M.M., CMA | Akademisi & Eksekutif F&B</title>
+    <meta name="description" content="Profil akademik dan profesional Nadia Syafa’at, Dosen Manajemen FEB Universitas Janabadra & CFO Soigné Culinary Consultant.">
+    <meta name="keywords" content="Nadia Syafaat, Dosen Manajemen UJB, FEB UJB, Universitas Janabadra, Konsultan F&B, Soigné Culinary Consultant, Dosen Ekonomi Jogja, Manajemen Strategis">
     <meta name="author" content="Nadia Syafa’at">
-    <meta property="og:title" content="Nadia Syafa’at | Academic & Entrepreneur Profile">
-    <meta property="og:description" content="Dosen Manajemen FEB UJB dan CFO Soigné Culinary Consultant dengan fokus pada riset inovatif dan pengembangan bisnis kuliner.">
-    <meta property="og:type" content="website">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://namadomain.com/nadia-syafaat">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Nadia Syafa’at | Dosen & Konsultan Bisnis F&B">
+    <meta property="og:description" content="Membangun generasi manajer adaptif dan merancang ekosistem kuliner dengan pendekatan riset berbasis data.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://ujb.ac.id">
 
-    <!-- Google Fonts: Quicksand (Imut & Bulat) & Nunito (Lembut untuk dibaca) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Structured Data (JSON-LD) for SEO Boost -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nadia Syafa’at, S.E., M.M., CMA",
+      "jobTitle": "Dosen Manajemen & Chief Finance Officer",
+      "worksFor": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Fakultas Ekonomi dan Bisnis Universitas Janabadra"
+        },
+        {
+          "@type": "Organization",
+          "name": "Soigné Culinary Consultant"
+        }
+      ],
+      "url": "https://ujb.ac.id",
+      "sameAs": [
+        "https://www.instagram.com/nadiaasyafaat/",
+        "https://www.facebook.com/syafaat.nadia/",
+        "https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id"
+      ],
+      "description": "Dosen Manajemen FEB UJB dan CFO Soigné Culinary Consultant dengan fokus pada riset inovatif dan pengembangan bisnis kuliner."
+    }
+    </script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter (Clean Corporate Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Tailwind Config for Super Cute Feminine Colors -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    /* 🛠️ TUTORIAL EDIT: Jika ingin mengubah tema warna, ganti kode HEX di bawah ini */
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
                     colors: {
-                        cute: {
-                            bg: '#FFF0F5',        /* Lavender Blush - sangat lembut */
-                            pink: '#F472B6',      /* Pink cerah imut */
-                            pinklight: '#FCE7F3', /* Baby pink */
-                            lilac: '#C084FC',     /* Ungu pastel */
-                            lilaclight: '#F3E8FF',/* Ungu sangat muda */
-                            peach: '#FFDAB9',     /* Peach lembut */
-                            text: '#4C1D95',      /* Ungu tua untuk teks agar tidak hitam pekat */
-                            muted: '#9D174D'      /* Pink tua untuk teks sekunder */
+                        urban: {
+                            dark: '#0a192f',      /* Deep Navy Blue (Biru Gelap) */
+                            darker: '#060f1e',    /* Darker Navy */
+                            blue: '#1e40af',      /* Blue 800 */
+                            blueLight: '#3b82f6', /* Blue 500 */
+                            silver: '#e2e8f0',    /* Slate 200 */
+                            white: '#ffffff',
+                            gray: '#64748b',      /* Slate 500 */
+                            light: '#f8fafc'      /* Slate 50 */
                         }
                     },
-                    fontFamily: {
-                        sans: ['Nunito', 'sans-serif'],
-                        heading: ['Quicksand', 'sans-serif'],
-                    },
                     animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-delayed': 'float 6s ease-in-out 3s infinite',
-                        'spin-slow': 'spin 15s linear infinite',
-                        'wiggle': 'wiggle 2s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'marquee': 'marquee 30s linear infinite',
                     },
                     keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-15px)' },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         },
-                        wiggle: {
-                            '0%, 100%': { transform: 'rotate(-3deg)' },
-                            '50%': { transform: 'rotate(3deg)' },
+                        marquee: {
+                            '0%': { transform: 'translateX(100vw)' },
+                            '100%': { transform: 'translateX(-100%)' },
                         }
                     }
                 }
@@ -72,767 +92,794 @@
 
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
-            color: theme('colors.cute.text');
-            background-color: theme('colors.cute.bg');
-            background-image: radial-gradient(theme('colors.cute.pinklight') 2px, transparent 2px);
-            background-size: 30px 30px;
+            background-color: #f8fafc;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Styles */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.1);
+            transition: all 0.3s ease;
         }
         
-        h1, h2, h3, h4, h5, h6, .font-heading {
-            font-family: 'Quicksand', sans-serif;
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
         }
 
-        ::selection {
-            background-color: theme('colors.cute.pink');
-            color: #fff;
+        .dark-glass {
+            background: rgba(10, 25, 47, 0.85); /* Deep Blue tint */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Premium Emerald Glass for Expert Section */
+        .emerald-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(16, 185, 129, 0.2); /* Emerald 500 border */
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+        }
+        .emerald-glass:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.2);
+            border-color: rgba(251, 191, 36, 0.5); /* Amber/Gold 400 border on hover */
         }
 
-        /* Glassmorphism Super Imut */
-        .glass-cute {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 2px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 10px 30px rgba(244, 114, 182, 0.1);
+        /* Background Images */
+        .academic-bg {
+            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
         }
 
-        /* Scroll Reveal Animation */
+        .economy-bg {
+            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .profile-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(10, 25, 47, 0.88), rgba(30, 58, 138, 0.8));
+            backdrop-filter: blur(4px);
+        }
+
+        /* Buttons */
+        .btn-corporate {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 32px;
+            background-color: #1e3a8a;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 1px solid #1e3a8a;
+        }
+
+        .btn-corporate:hover {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+            box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: #1e3a8a;
+        }
+
+        /* Scroll Reveal */
         .reveal {
             opacity: 0;
-            transform: translateY(30px) scale(0.95);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .reveal.active {
             opacity: 1;
-            transform: translateY(0) scale(1);
+            transform: translateY(0);
         }
-        .delay-100 { transition-delay: 100ms; }
-        .delay-200 { transition-delay: 200ms; }
-        .delay-300 { transition-delay: 300ms; }
-        
-        /* Animations for SVG Girl */
-        @keyframes steamRise {
-            0% { transform: translateY(0) scale(1) rotate(-2deg); opacity: 0; }
-            30% { opacity: 0.8; }
-            100% { transform: translateY(-25px) scale(1.3) rotate(5deg); opacity: 0; }
-        }
-        .anim-steam path:nth-child(1) { animation: steamRise 2.5s infinite ease-in; }
-        .anim-steam path:nth-child(2) { animation: steamRise 2.5s infinite ease-in 0.8s; }
-        .anim-steam path:nth-child(3) { animation: steamRise 2.5s infinite ease-in 1.6s; }
-        
-        @keyframes blowAir {
-            0%, 100% { transform: translateY(0); opacity: 0; }
-            50% { transform: translateY(4px); opacity: 1; }
-        }
-        .anim-blow { animation: blowAir 2s infinite ease-in-out; }
-        
-        @keyframes blinkOpen {
-            0%, 95%, 98%, 100% { opacity: 1; }
-            96%, 97% { opacity: 0; }
-        }
-        @keyframes blinkClosed {
-            0%, 95%, 98%, 100% { opacity: 0; }
-            96%, 97% { opacity: 1; }
-        }
-        .eyes-open { animation: blinkOpen 5s infinite; }
-        .eyes-closed { animation: blinkClosed 5s infinite; }
 
-        /* Custom Scrollbar Pink */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: theme('colors.cute.bg'); }
-        ::-webkit-scrollbar-thumb { background: theme('colors.cute.pinklight'); border-radius: 10px; border: 2px solid theme('colors.cute.bg'); }
-        ::-webkit-scrollbar-thumb:hover { background: theme('colors.cute.pink'); }
+        /* Form Inputs */
+        .corp-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .corp-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        .corp-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Grid background for light sections */
+        .grid-bg {
+            background-image: 
+                linear-gradient(rgba(100, 116, 139, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(100, 116, 139, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Custom SVG Animations */
+        @keyframes floatAnim {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        .anim-float { animation: floatAnim 4s ease-in-out infinite; }
+        .anim-float-delayed { animation: floatAnim 4s ease-in-out 2s infinite; }
+        
+        @keyframes drawPath {
+            0% { stroke-dashoffset: 1000; }
+            100% { stroke-dashoffset: 0; }
+        }
+        .anim-draw {
+            stroke-dasharray: 1000;
+            animation: drawPath 4s alternate infinite ease-in-out;
+        }
     </style>
 </head>
-<body class="antialiased overflow-x-hidden">
+<body class="antialiased selection:bg-urban-blueLight selection:text-white">
 
-    <!-- SVG Sparkle Decoration -->
-    <svg style="display:none;">
-        <symbol id="sparkle" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
-        </symbol>
-    </svg>
+    <!-- RUNNING TEXT / TICKER -->
+    <div class="fixed top-0 left-0 w-full h-8 bg-urban-blue/95 backdrop-blur-md text-white z-[60] flex items-center overflow-hidden border-b border-white/20 shadow-md">
+        <div class="animate-marquee whitespace-nowrap text-[11px] md:text-xs font-semibold tracking-wider flex items-center gap-6">
+            <span>✨ Selamat Datang di Profil Profesional Nadia Syafa’at, S.E., M.M., CMA.</span>
+            <span class="text-cyan-300">•</span>
+            <span>Dosen Manajemen FEB Universitas Janabadra</span>
+            <span class="text-cyan-300">•</span>
+            <span>Chief Finance Officer (CFO) Soigné Culinary Consultant</span>
+            <span class="text-cyan-300">•</span>
+            <span>Riset Berbasis Data & Inovasi Kewirausahaan F&B ✨</span>
+        </div>
+    </div>
 
-    <!-- NAVBAR CUTE -->
-    <nav class="fixed w-full top-0 z-50 glass-cute border-b-0 transition-all duration-300 my-2 mx-4 sm:mx-8 md:mx-auto md:max-w-6xl rounded-full left-0 right-0 py-1 px-4">
-        <div class="flex justify-between items-center h-14 sm:h-16">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-2.5 group pl-2">
-                <div class="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-cute-pink to-cute-lilac rounded-full flex items-center justify-center text-white font-heading font-bold text-lg shadow-[0_4px_10px_rgba(244,114,182,0.4)] group-hover:animate-wiggle">
-                    N
-                </div>
-                <span class="font-heading font-bold text-lg sm:text-xl text-cute-text tracking-tight group-hover:text-cute-pink transition-colors">Nadia.</span>
+    <!-- Navigation -->
+    <nav class="fixed top-8 w-full z-50 transition-all duration-500 py-5 border-b border-transparent" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-tight text-white flex items-center gap-2" aria-label="Beranda">
+                <div class="w-8 h-8 bg-urban-blueLight rounded flex items-center justify-center text-white text-sm" aria-hidden="true">N</div>
+                NADIA<span class="text-urban-blueLight">.</span>
             </a>
-
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-5 lg:space-x-7">
-                <a href="#profil" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Profil</a>
-                <a href="#bisnis" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Bisnis F&B</a>
-                <a href="#penelitian" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Riset</a>
-                <a href="#publikasi" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Publikasi</a>
-                <a href="#pengajaran" class="text-sm font-bold text-cute-muted hover:text-cute-pink transition-colors">Pengajaran</a>
-                <a href="#kontak" class="bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-5 py-2 rounded-full text-sm font-bold hover:shadow-[0_8px_20px_rgba(244,114,182,0.4)] hover:-translate-y-0.5 transition-all">
-                    Sapa Nadia 
+            
+            <div class="hidden md:flex space-x-8 font-semibold text-[11px] tracking-widest text-urban-silver uppercase items-center">
+                <a href="#about" class="hover:text-white transition-colors relative group" title="Profil Nadia Syafa'at">
+                    Profil
+                    <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#bisnis" class="hover:text-amber-400 transition-colors relative group text-amber-300 font-bold" title="Konsultan F&B Soigné">
+                    Bisnis F&B
+                    <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#riset" class="hover:text-white transition-colors relative group" title="Fokus Riset Keilmuan">
+                    Riset & Keahlian
+                    <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#pengajaran" class="hover:text-white transition-colors relative group" title="Mata Kuliah & Kolaborasi">
+                    Pengajaran
+                    <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="hover:text-white transition-colors relative group" title="Hubungi Nadia">
+                    Kontak
+                    <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
 
-            <!-- Mobile Menu Button (Hamburger & Close) -->
-            <div class="md:hidden flex items-center pr-2">
-                <button id="mobile-menu-btn" class="text-cute-text hover:text-cute-pink focus:outline-none bg-cute-pinklight p-2 rounded-full transition-colors relative w-10 h-10 flex items-center justify-center">
-                    <i data-lucide="menu" id="menu-icon-open" class="w-5 h-5 absolute transition-all duration-300"></i>
-                    <i data-lucide="x" id="menu-icon-close" class="w-5 h-5 absolute opacity-0 scale-50 transition-all duration-300"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Panel (Animated) -->
-        <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 mt-3 glass-cute rounded-3xl p-4 shadow-xl opacity-0 invisible translate-y-[-10px] transition-all duration-300">
-            <div class="flex flex-col space-y-2 text-center">
-                <a href="#profil" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Profil</a>
-                <a href="#bisnis" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Bisnis F&B</a>
-                <a href="#penelitian" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Riset</a>
-                <a href="#publikasi" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Publikasi</a>
-                <a href="#pengajaran" class="mobile-link px-4 py-3 text-sm font-bold text-cute-text hover:bg-cute-pinklight rounded-2xl transition-colors">Pengajaran</a>
-                <a href="#kontak" class="mobile-link mt-2 px-4 py-3 text-sm font-bold text-white bg-gradient-to-r from-cute-pink to-cute-lilac rounded-2xl shadow-md">Sapa Nadia </a>
-            </div>
+            <button class="md:hidden text-2xl text-white hover:text-urban-blueLight transition-colors focus:outline-none" aria-label="Buka Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- HERO SECTION IMUT -->
-    <section id="hero" class="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
-        <!-- Ornamen Bulat Pastel Mengambang -->
-        <div class="absolute top-10 right-10 w-[300px] h-[300px] bg-cute-pinklight rounded-full blur-[60px] opacity-70 animate-float z-0"></div>
-        <div class="absolute bottom-20 left-10 w-[250px] h-[250px] bg-cute-lilaclight rounded-full blur-[60px] opacity-70 animate-float-delayed z-0"></div>
-        <div class="absolute top-1/3 left-1/4 w-4 h-4 text-cute-pink animate-pulse z-0"><svg><use href="#sparkle"></use></svg></div>
-        <div class="absolute top-1/4 right-1/4 w-6 h-6 text-cute-lilac animate-pulse delay-100 z-0"><svg><use href="#sparkle"></use></svg></div>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <header class="relative min-h-screen flex items-center justify-center pt-24 pb-12 z-10 px-6 academic-bg overflow-hidden">
+            <div class="profile-overlay z-0"></div>
 
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-            <div class="flex flex-col-reverse lg:flex-row gap-12 items-center">
+            <!-- Elemen Dekorasi Partikel Abstrak (Agar Tidak Membosankan) -->
+            <div class="absolute top-1/4 left-[10%] w-12 h-12 bg-cyan-400/20 rounded-full blur-md anim-float z-0 pointer-events-none"></div>
+            <div class="absolute bottom-1/4 right-[10%] w-24 h-24 bg-urban-blueLight/20 rounded-full blur-xl anim-float-delayed z-0 pointer-events-none"></div>
+            <div class="absolute top-1/2 right-[20%] w-8 h-8 border border-cyan-300/30 rounded-full anim-float z-0 pointer-events-none" style="animation-duration: 5s;"></div>
+            <div class="absolute bottom-1/3 left-[20%] w-10 h-10 border border-urban-blueLight/30 rotate-45 anim-float-delayed z-0 pointer-events-none" style="animation-duration: 6s;"></div>
+
+            <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 relative z-20">
                 
                 <!-- Hero Text -->
-                <div class="w-full lg:w-1/2 text-center lg:text-left">
-                    <div class="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border-2 border-cute-pinklight text-xs sm:text-sm font-bold text-cute-pink mb-6 shadow-sm">
-                        <i data-lucide="sparkles" class="w-4 h-4"></i>
-                        Academic | F&B Entrepreneur
+                <div class="w-full md:w-3/5 text-center md:text-left order-2 md:order-1 animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-urban-blueLight/50 bg-urban-blueLight/10 text-urban-blueLight text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+                        <span class="w-2 h-2 rounded-full bg-urban-blueLight animate-pulse-slow"></span>
+                        Akademisi & Eksekutif F&B
                     </div>
-
-                    <h1 class="reveal delay-100 text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-cute-text leading-[1.2] mb-5 relative">
-                        Halo, saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-cute-pink to-cute-lilac">Nadia Syafa’at</span> 
-                        
-                        <!-- Guratan Estetik (Swirl) -->
-                        <svg class="absolute -top-6 -right-8 w-12 h-12 text-cute-pink opacity-60 hidden sm:block animate-wiggle" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 80 Q 50 10, 80 80 T 100 20" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
-                        </svg>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
+                        DOSEN MANAJEMEN <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-urban-blueLight to-cyan-300">& KONSULTAN BISNIS F&B.</span>
                     </h1>
                     
-                    <p class="reveal delay-200 text-lg text-cute-muted mb-8 font-medium max-w-lg mx-auto lg:mx-0 relative">
-                        Dosen Manajemen & Pengusaha F&B yang bersemangat menjembatani teori dan dunia nyata—mencetak generasi pemimpin adaptif, tajam menganalisis data, dan kaya strategi.
+                    <p class="text-base md:text-lg text-urban-silver font-normal max-w-xl mx-auto md:mx-0 leading-relaxed mb-10">
+                        Saya <strong class="text-white font-semibold">Nadia Syafa’at, S.E., M.M., CMA.</strong> Menjembatani seni kewirausahaan dengan ketajaman analitik berbasis data untuk melahirkan inovasi yang relevan dan mencetak generasi manajer modern.
                     </p>
-
-                    <!-- Cute Value Proposition -->
-                    <div class="reveal delay-300 glass-cute p-5 mb-8 rounded-3xl max-w-xl mx-auto lg:mx-0 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 bg-cute-pink text-white rounded-full flex items-center justify-center animate-wiggle shadow-md">
-                            <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
-                        </div>
-                        <p class="text-sm font-bold text-cute-text italic">
-                            "Bagi saya, manajemen adalah seni dan sains. Memadukan teori akademik yang solid dengan sentuhan praktis kewirausahaan adalah kunci melahirkan solusi yang relevan dan berdampak."
-                        </p>
-                    </div>
                     
-                    <div class="reveal delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#bisnis" class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-8 py-3.5 rounded-full font-bold hover:shadow-[0_10px_25px_rgba(244,114,182,0.4)] hover:-translate-y-1 transition-all">
-                            Profil Kewirausahaan <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#bisnis" class="btn-corporate" title="Profil Kewirausahaan Soigné">
+                            Profil Bisnis F&B
                         </a>
-                        <a href="#kontak" class="inline-flex justify-center items-center gap-2 bg-white text-cute-pink border-2 border-cute-pinklight px-8 py-3.5 rounded-full font-bold hover:bg-cute-pinklight transition-all shadow-sm hover:-translate-y-1">
-                            Hubungi Saya
+                        <a href="#about" class="btn-corporate btn-outline" title="Baca Selengkapnya">
+                            Selengkapnya
                         </a>
                     </div>
                 </div>
 
-                <!-- Hero Image/Graphic (Super Cute Frame) -->
-                <div class="w-full lg:w-1/2 flex justify-center reveal mt-8 lg:mt-0 relative">
-                    <!-- Guratan Panah Imut -->
-                    <svg class="absolute -top-4 right-8 w-16 h-16 text-cute-lilac opacity-70 hidden lg:block" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 80 C 20 20, 70 20, 80 50" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6" class="animate-pulse"/>
-                        <path d="M70 40 L 80 50 L 90 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <!-- Hero Image (Animated & Responsive Box) -->
+                <div class="w-full md:w-2/5 flex justify-center order-1 md:order-2 animate-fade-in-up relative z-20" style="animation-delay: 0.2s;">
+                    
+                    <!-- Glow Belakang Foto -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/20 rounded-full blur-[80px] animate-pulse-slow pointer-events-none"></div>
 
-                    <!-- Image Wrapper -->
-                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
-                        <!-- Decorative Spinning Dashed Frame -->
-                        <div class="absolute inset-[-15px] border-4 border-dashed border-cute-pink rounded-full opacity-30 animate-spin-slow"></div>
+                    <!-- Container Foto yang Mengambang (Float) -->
+                    <div class="relative w-full max-w-[380px] mx-auto anim-float">
+                        <!-- Border Animasi Glow -->
+                        <div class="absolute -inset-0.5 bg-gradient-to-tr from-urban-blueLight via-cyan-300 to-urban-blue rounded-2xl blur-sm opacity-50 animate-pulse-slow"></div>
                         
-                        <!-- Solid Pink Backdrop Circle -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-cute-pinklight to-cute-lilaclight rounded-full transform translate-x-4 translate-y-4"></div>
-                        
-                        <!-- Main Image Container -->
-                        <div class="absolute inset-0 bg-white rounded-full shadow-xl overflow-hidden border-8 border-white z-10 block">
-                            <!-- FOTO UTAMA -->
-                            <img src="nadia.jpeg" 
-                                 alt="Nadia Syafa'at" 
-                                 class="w-full h-full object-cover object-center"
-                                 onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Nadia+Syafaat&background=FCE7F3&color=F472B6&size=512&font-size=0.33';">
-                        </div>
+                        <!-- Kotak Utama Foto -->
+                        <div class="relative dark-glass p-4 rounded-xl w-full border border-white/20 group overflow-hidden bg-urban-darker/90">
+                            <!-- Efek Kilatan Kaca (Glossy Swipe) saat di-hover -->
+                            <div class="absolute top-0 -left-[100%] h-full w-[50%] z-20 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:left-[200%] transition-all duration-1000 ease-in-out pointer-events-none"></div>
 
-                        <!-- Floating Badges Cute -->
-                        <div class="absolute -bottom-4 right-0 sm:-right-4 bg-white p-3 rounded-2xl shadow-lg border-2 border-cute-pinklight flex items-center gap-3 z-20 animate-float-delayed">
-                            <div class="w-10 h-10 bg-cute-lilaclight rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="building-2" class="w-5 h-5 text-cute-lilac"></i>
+                            <!-- Area Foto Responsif (aspect-[4/5] menjaga rasio potret, object-cover memastikan pas) -->
+                            <div class="aspect-[4/5] w-full rounded-lg overflow-hidden relative shadow-[0_0_20px_rgba(0,0,0,0.5)] bg-urban-darker">
+                                <!-- 🛠️ GAMBAR HERO -->
+                                <img src="nadia.jpeg" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Nadia+Syafaat&background=0a192f&color=3b82f6&size=512';" alt="Nadia Syafa'at - Dosen dan F&B Entrepreneur" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-110">
+                                
+                                <!-- Gradasi tipis di bawah foto agar menyatu -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-urban-darker/80 via-transparent to-transparent opacity-60 pointer-events-none"></div>
                             </div>
-                            <div class="pr-2">
-                                <p class="text-[10px] text-cute-muted font-bold uppercase whitespace-nowrap">Dosen</p>
-                                <p class="text-xs font-heading font-bold text-cute-text whitespace-nowrap">FEB UJB</p>
+                            
+                            <div class="mt-5 border-t border-white/10 pt-4 flex flex-col gap-4 relative z-10">
+                                <div>
+                                    <h2 class="text-white font-bold text-lg flex items-center gap-2 group-hover:text-cyan-300 transition-colors">
+                                        Nadia Syafa'at <i class="fa-solid fa-circle-check text-cyan-400 text-sm" title="Verified Professional"></i>
+                                    </h2>
+                                    <p class="text-urban-blueLight text-[10px] font-bold uppercase tracking-widest mt-1">FEB Univ. Janabadra</p>
+                                </div>
+                                <!-- Social Media Icons -->
+                                <div class="flex flex-wrap gap-3 text-urban-silver" aria-label="Tautan Sosial Media">
+                                    <a href="https://www.instagram.com/nadiaasyafaat/" target="_blank" title="Instagram Resmi" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E1306C] hover:text-white transition-all hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/syafaat.nadia/" target="_blank" title="Profil Facebook" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-all hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" title="Publikasi Google Scholar" aria-label="Google Scholar" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4285F4] hover:text-white transition-all hover:scale-110"><i class="fa-solid fa-graduation-cap"></i></a>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Sparkle overlay (Tidak menutupi wajah) -->
-                        <div class="absolute -top-2 -right-8 w-10 h-10 text-cute-pink z-20 animate-wiggle"><svg><use href="#sparkle"></use></svg></div>
-                        
-                        <!-- ☕ Animasi Cewek Cantik Ngopi Mengambang Di Bawah Foto -->
-                        <div class="absolute -bottom-10 sm:-bottom-14 -left-4 sm:-left-8 z-30 drop-shadow-lg animate-float">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 sm:w-32 sm:h-32">
-                                <!-- Body/Sweater -->
-                                <path d="M40 200 C40 130 160 130 160 200 Z" fill="#FCE7F3" />
-                                <path d="M80 130 L120 130 L100 160 Z" fill="#F472B6" opacity="0.2"/>
-                                
-                                <!-- Hair Back -->
-                                <path d="M50 100 C30 180 60 200 100 200 C140 200 170 180 150 100 Z" fill="#4C1D95" />
-                                
-                                <!-- Cozy Scarf (Syal Kehangatan) -->
-                                <path d="M55 130 C 80 150, 120 150, 145 130 C 150 135, 150 145, 145 150 C 120 170, 80 170, 55 150 C 50 145, 50 135, 55 130 Z" fill="#F472B6" />
-                                <path d="M125 140 L 135 180 L 115 180 Z" fill="#F472B6" />
-
-                                <!-- Face -->
-                                <path d="M65 100 C65 60 135 60 135 100 C135 130 115 140 100 140 C85 140 65 130 65 100 Z" fill="#FFE4E1" />
-                                
-                                <!-- Blush Merona -->
-                                <circle cx="76" cy="102" r="7" fill="#F472B6" opacity="0.5" />
-                                <circle cx="124" cy="102" r="7" fill="#F472B6" opacity="0.5" />
-                                
-                                <!-- Eyes -->
-                                <g class="eyes-open">
-                                    <path d="M70 95 Q76 100 82 95" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                    <path d="M118 95 Q124 100 130 95" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                    <path d="M70 95 L67 92" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
-                                    <path d="M130 95 L133 92" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
-                                </g>
-                                <g class="eyes-closed" opacity="0">
-                                    <path d="M70 98 Q76 96 82 98" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                    <path d="M118 98 Q124 96 130 98" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                </g>
-
-                                <!-- Mouth -->
-                                <ellipse cx="100" cy="108" rx="3" ry="4" fill="#F472B6" opacity="0.9" />
-                                <path d="M100 113 L100 118" stroke="#FCE7F3" stroke-width="2" stroke-linecap="round" class="anim-blow" />
-
-                                <!-- Front Hair / Bangs -->
-                                <path d="M60 90 C60 50 140 50 140 90 C130 60 70 60 60 90 Z" fill="#4C1D95" />
-                                <path d="M100 50 C120 70 140 70 140 90 C120 80 110 50 100 50 Z" fill="#5B21B6" opacity="0.3"/>
-                                
-                                <!-- Mug Handle -->
-                                <path d="M125 125 C145 125 145 140 125 140" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" />
-                                
-                                <!-- Mug Body -->
-                                <path d="M70 115 L130 115 C130 145 70 145 70 115 Z" fill="#C084FC" />
-                                <path d="M70 115 Q100 122 130 115 Q100 108 70 115 Z" fill="#A855F7" />
-
-                                <!-- Sleeves -->
-                                <path d="M40 170 Q 50 130 80 128" stroke="#FCE7F3" stroke-width="18" stroke-linecap="round" fill="none" />
-                                <path d="M160 170 Q 150 130 120 128" stroke="#FCE7F3" stroke-width="18" stroke-linecap="round" fill="none" />
-
-                                <!-- Hands -->
-                                <circle cx="82" cy="128" r="6" fill="#FFE4E1" />
-                                <circle cx="118" cy="128" r="6" fill="#FFE4E1" />
-                                <path d="M82 125 L86 125 M82 128 L86 128 M82 131 L86 131" stroke="#E5B3B3" stroke-width="1" stroke-linecap="round" />
-                                <path d="M118 125 L114 125 M118 128 L114 128 M118 131 L114 131" stroke="#E5B3B3" stroke-width="1" stroke-linecap="round" />
-
-                                <!-- Extra Steam -->
-                                <g class="anim-steam" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8">
-                                    <path d="M85 105 Q75 85 90 70" />
-                                    <path d="M100 100 Q110 80 95 65" />
-                                    <path d="M115 105 Q125 85 110 70" />
-                                </g>
-                                
-                                <!-- Heat sparkles -->
-                                <path d="M62 125 L66 120 M138 125 L134 120" stroke="#F472B6" stroke-width="2" stroke-linecap="round" class="animate-pulse" />
-                            </svg>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- ABOUT SECTION FEMININ -->
-    <section id="profil" class="py-20 lg:py-28 relative">
-        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-            <svg class="relative block w-[calc(100%+1.3px)] h-[40px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
-            </svg>
-        </div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-24 relative z-10 grid-bg">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16 items-center reveal">
+                    
+                    <!-- Image Block (Animated SVG Profile Representation) -->
+                    <div class="w-full lg:w-5/12 flex justify-center relative">
+                        <div class="relative w-full max-w-[450px]">
+                            <!-- Decorative element -->
+                            <div class="absolute -top-4 -left-4 w-24 h-24 bg-urban-blueLight/10 rounded-full blur-xl"></div>
+                            <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-urban-blue/10 rounded-full blur-xl"></div>
+                            
+                            <div class="glass-card p-6 aspect-square flex flex-col items-center justify-center relative overflow-hidden bg-urban-dark/80 border border-urban-blueLight/30 rounded-xl" aria-hidden="true">
+                                <!-- Background Animation -->
+                                <div class="absolute inset-0 bg-gradient-to-tr from-urban-blue/30 to-cyan-500/10 animate-pulse-slow"></div>
+                                
+                                <!-- Circular animated rings -->
+                                <div class="absolute w-40 h-40 border-2 border-dashed border-cyan-400/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
+                                <div class="absolute w-24 h-24 border-2 border-urban-blueLight/50 rounded-full animate-[ping_3s_ease-in-out_infinite]"></div>
+                                
+                                <!-- SVG Icon -->
+                                <svg class="w-3/5 h-3/5 text-urban-blueLight anim-float relative z-10 drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A11.954 11.954 0 0112 15.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253" />
+                                </svg>
+                            </div>
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute -right-6 top-1/2 -translate-y-1/2 glass-card py-4 px-6 rounded-lg border-l-4 border-l-urban-blueLight hidden md:block text-center shadow-xl">
+                                <h3 class="text-xl font-black text-urban-dark">Akademisi</h3>
+                                <p class="text-xs font-bold text-urban-gray uppercase tracking-wider">& Praktisi</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white rounded-[3rem] p-8 sm:p-12 shadow-[0_20px_50px_rgba(244,114,182,0.05)] border-2 border-cute-pinklight relative z-10 reveal">
-            <svg class="absolute top-10 right-10 w-24 h-24 text-cute-bg z-0 pointer-events-none hidden sm:block" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 80 C 10 50, 10 20, 30 10 C 40 5, 50 20, 50 20 C 50 20, 60 5, 70 10 C 90 20, 90 50, 50 80 Z" stroke="currentColor" stroke-width="4" fill="none"/>
-            </svg>
-            
-            <div class="absolute -top-6 sm:-top-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-6 py-2 rounded-full font-heading font-bold shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i data-lucide="user" class="w-4 h-4"></i> Profil Singkat
+                    <!-- Text Block -->
+                    <div class="w-full lg:w-7/12">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                            <span class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Profil Singkat</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-black text-urban-dark mb-6 tracking-tight">Memadukan Akademis & Praktik Bisnis Modern</h2>
+                        
+                        <div class="space-y-4 font-sans text-base text-urban-gray leading-relaxed mb-8">
+                            <p>
+                                Biasa disapa <strong>Kak Dos</strong>, Nadia Syafa'at adalah seorang profesional berprestasi yang memadukan keunggulan di bidang akademis dan dinamika kewirausahaan. Didorong oleh keingintahuan yang tinggi, ia berkomitmen menciptakan dampak positif yang terukur di setiap langkahnya.
+                            </p>
+                            <p>
+                                Berperan ganda sebagai dosen dan pengusaha, ia merangkai profil profesional yang matang dan inovatif. Fokus utamanya bukan sekadar pada teori, melainkan pemanfaatan riset empiris dan pembentukan karakter kepemimpinan strategis yang siap menghadapi era digital.
+                            </p>
+                        </div>
+                        
+                        <!-- Profile Highlights -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-urban-silver">
+                            <!-- Akademik -->
+                            <div class="glass-card p-6 rounded-lg">
+                                <div class="w-10 h-10 rounded bg-urban-blueLight/10 flex items-center justify-center text-urban-blueLight mb-4">
+                                    <i class="fa-solid fa-graduation-cap text-xl" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="font-bold text-urban-dark text-lg mb-2">Peran Akademik</h3>
+                                <ul class="text-xs text-urban-gray space-y-2 leading-relaxed font-medium">
+                                    <li>• <strong>Dosen Program Studi Manajemen</strong></li>
+                                    <li>• Fakultas Ekonomi & Bisnis, Universitas Janabadra</li>
+                                    <li>• Peneliti Berbasis Data Empiris</li>
+                                </ul>
+                            </div>
+
+                            <!-- Praktisi F&B -->
+                            <div class="glass-card p-6 rounded-lg">
+                                <div class="w-10 h-10 rounded bg-urban-blueLight/10 flex items-center justify-center text-urban-blueLight mb-4">
+                                    <i class="fa-solid fa-briefcase text-xl" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="font-bold text-urban-dark text-lg mb-2">Kewirausahaan</h3>
+                                <ul class="text-xs text-urban-gray space-y-2 leading-relaxed font-medium">
+                                    <li>• <strong>Chief Finance Officer (CFO)</strong></li>
+                                    <li>• Soigné Culinary Consultant</li>
+                                    <li>• Perencanaan & Inovasi Bisnis F&B</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SOIGNÉ BUSINESS SECTION (EMERALD/AMBER THEME) -->
+        <section id="bisnis" class="py-24 relative z-10 bg-emerald-950 text-white overflow-hidden shadow-2xl">
+            <!-- Decorative Background Gradients -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <div class="absolute -top-1/4 -right-1/4 w-[60%] h-[60%] bg-emerald-700/30 rounded-full blur-[120px] mix-blend-screen"></div>
+                <div class="absolute bottom-[-10%] -left-[10%] w-[50%] h-[50%] bg-amber-500/15 rounded-full blur-[100px] mix-blend-screen"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-6">
-                <div class="lg:col-span-5 text-center lg:text-left">
-                    <h2 class="text-3xl sm:text-4xl font-heading font-bold text-cute-text mb-4 leading-snug">
-                        Membangun Ekosistem <br class="hidden sm:block"> <span class="text-cute-pink">Manajemen Modern</span>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <!-- Headline -->
+                <div class="text-center max-w-4xl mx-auto mb-20 reveal">
+                    <div class="inline-flex items-center justify-center gap-2 px-5 py-2 mb-6 rounded-full border border-amber-400/50 bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i> Konsultan Bisnis Kuliner Profesional
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight text-white tracking-tight uppercase">
+                        SOIGNÉ <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-400 text-3xl md:text-4xl">Culinary Consultant</span>
                     </h2>
-                    <p class="text-lg font-bold text-cute-lilac">
-                        Akademisi & Profesional Berprestasi.
+                    <p class="text-emerald-100/90 text-base md:text-lg mb-10 leading-relaxed max-w-3xl mx-auto">
+                        Di luar mimbar akademik, saya menjabat sebagai CFO di <strong>Soigné</strong>. Menggunakan ketelitian analitik untuk merancang konsep, standarisasi operasional, hingga kesehatan finansial bagi kafe & restoran klien kami. Membantu Anda menciptakan pengalaman bersantap yang tak terlupakan.
                     </p>
                 </div>
 
-                <div class="lg:col-span-7 space-y-4 text-cute-muted font-medium text-base sm:text-lg text-center lg:text-left">
-                    <p>
-                        Biasa disapa <strong>Kak Dos</strong>, Nadia Syafa'at adalah seorang profesional berprestasi yang unggul dalam bidang akademis sekaligus kewirausahaan. Didorong oleh keingintahuannya yang tinggi untuk membuat dampak positif yang terukur.
-                    </p>
-                    <p>
-                        Ia mengkombinasikan keahliannya sebagai pendidik dan pengusaha untuk menciptakan profil yang unik dan berpengaruh. Metode belajar yang ia terapkan berfokus pada inovasi, pemanfaatan riset empiris, dan pembentukan pola pikir strategis yang kuat.
-                    </p>
-                    
-                    <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-3">
-                        <div class="bg-cute-pinklight text-cute-pink px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Berbasis Data
+                <!-- Core Expertise (Soigné Focus) -->
+                <div class="mb-24 reveal">
+                    <div class="text-center mb-10">
+                        <h3 class="text-2xl font-bold text-white mb-2">Area Intervensi Bisnis F&B</h3>
+                        <p class="text-emerald-300/80 text-sm">Pilar fokus kami dalam mengelola dan menskalasi bisnis restoran.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                        <div class="flex items-center gap-3 px-5 py-3 rounded-full border border-emerald-700/50 bg-emerald-900/40">
+                            <i class="fa-solid fa-receipt text-amber-400 text-lg" aria-hidden="true"></i> <span class="text-sm font-semibold">Resep Standar Bintang 5</span>
                         </div>
-                        <div class="bg-cute-lilaclight text-cute-lilac px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Riset Empiris
+                        <div class="flex items-center gap-3 px-5 py-3 rounded-full border border-emerald-700/50 bg-emerald-900/40">
+                            <i class="fa-solid fa-chart-pie text-amber-400 text-lg" aria-hidden="true"></i> <span class="text-sm font-semibold">Analisis HPP & Harga Jual</span>
                         </div>
-                        <div class="bg-cute-pinklight text-cute-pink px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
-                            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Solusi Relevan
+                        <div class="flex items-center gap-3 px-5 py-3 rounded-full border border-emerald-700/50 bg-emerald-900/40">
+                            <i class="fa-solid fa-clipboard-list text-amber-400 text-lg" aria-hidden="true"></i> <span class="text-sm font-semibold">Penyusunan SOP</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-5 py-3 rounded-full border border-emerald-700/50 bg-emerald-900/40">
+                            <i class="fa-solid fa-kitchen-set text-amber-400 text-lg" aria-hidden="true"></i> <span class="text-sm font-semibold">Desain & Layout Dapur</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-5 py-3 rounded-full border border-emerald-700/50 bg-emerald-900/40">
+                            <i class="fa-solid fa-users text-amber-400 text-lg" aria-hidden="true"></i> <span class="text-sm font-semibold">Rekrutmen & Pelatihan Tim</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- Value Proposition -->
+                <div class="reveal">
+                    <div class="bg-gradient-to-br from-emerald-700 to-emerald-900 border border-amber-400/40 p-10 md:p-16 rounded-[2rem] text-center shadow-[0_20px_50px_rgba(4,47,46,0.8)] relative overflow-hidden">
+                        <!-- Accent Line -->
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-emerald-900 via-amber-400 to-emerald-900"></div>
+                        <i class="fa-solid fa-quote-left absolute -top-4 -left-2 text-[150px] text-white/5 -rotate-12 pointer-events-none" aria-hidden="true"></i>
+                        
+                        <h3 class="text-2xl md:text-4xl font-bold text-white leading-relaxed relative z-10 tracking-tight">
+                            <span class="text-amber-400">"</span> Bagi saya, manajemen adalah seni dan sains. Memadukan teori akademik yang solid dengan <span class="text-amber-400 border-b-2 border-amber-400/50 pb-1">sentuhan praktis kewirausahaan</span> adalah kunci melahirkan solusi yang berdampak. <span class="text-amber-400">"</span>
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RISET & KEAHLIAN SECTION -->
+        <section id="riset" class="py-24 relative z-10 bg-urban-dark text-white economy-bg">
+            <div class="profile-overlay opacity-95"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 reveal">
+                
+                <div class="text-center mb-16">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                        <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Area Intervensi Akademik</h2>
+                        <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">Fokus Riset Keilmuan</h3>
+                    <p class="text-urban-silver max-w-2xl mx-auto text-sm leading-relaxed">Kajian strategis dengan sentuhan analitik untuk memajukan ekosistem manajemen, perilaku organisasi, dan bisnis modern.</p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <article class="dark-glass p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-t-transparent hover:border-t-urban-blueLight group">
+                        <i class="fa-solid fa-bullseye text-4xl text-urban-blueLight mb-6 group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <h4 class="text-xl font-bold mb-3">Manajemen Strategis</h4>
+                        <p class="text-sm text-urban-silver/80 leading-relaxed">Formulasi dan evaluasi keputusan lintas fungsi untuk memastikan organisasi mencapai tujuannya dengan keanggunan analitis.</p>
+                    </article>
+
+                    <article class="dark-glass p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-t-transparent hover:border-t-urban-blueLight group">
+                        <i class="fa-solid fa-chart-pie text-4xl text-urban-blueLight mb-6 group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <h4 class="text-xl font-bold mb-3">Keputusan Berbasis Data</h4>
+                        <p class="text-sm text-urban-silver/80 leading-relaxed">Pemanfaatan analitik metrik objektif guna memandu arah perusahaan secara akurat, terukur, dan mengeliminasi bias.</p>
+                    </article>
+
+                    <article class="dark-glass p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-t-transparent hover:border-t-urban-blueLight group">
+                        <i class="fa-solid fa-chart-line text-4xl text-urban-blueLight mb-6 group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <h4 class="text-xl font-bold mb-3">Evaluasi Kinerja</h4>
+                        <p class="text-sm text-urban-silver/80 leading-relaxed">Pengembangan indikator komprehensif untuk menilai efektivitas operasional, baik di lingkup akademik maupun industri bisnis.</p>
+                    </article>
+
+                    <article class="dark-glass p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-t-transparent hover:border-t-urban-blueLight group">
+                        <i class="fa-solid fa-lightbulb text-4xl text-urban-blueLight mb-6 group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <h4 class="text-xl font-bold mb-3">Sistem & Inovasi</h4>
+                        <p class="text-sm text-urban-silver/80 leading-relaxed">Adaptasi struktur baru untuk merespon dinamika bisnis yang berubah secara cepat, inovatif, dan relevan dengan pasar digital.</p>
+                    </article>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- NEW: F&B BUSINESS SECTION (SOIGNÉ) -->
-    <section id="bisnis" class="py-20 lg:py-28 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="glass-cute p-8 sm:p-12 md:p-16 rounded-[3rem] border-2 border-cute-pinklight shadow-lg relative overflow-hidden reveal">
+        <!-- PENGAJARAN & KOLABORASI SECTION -->
+        <section id="pengajaran" class="py-24 relative z-10 grid-bg">
+            <div class="max-w-7xl mx-auto px-6">
                 
-                <!-- Dekorasi Background Sudut -->
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-cute-pink rounded-full blur-3xl opacity-20"></div>
-                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-cute-lilac rounded-full blur-3xl opacity-20"></div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
-                    
-                    <!-- Text Area -->
-                    <div class="order-2 lg:order-1 text-center lg:text-left">
-                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cute-pinklight text-xs sm:text-sm font-bold text-cute-pink mb-4 shadow-sm">
-                            <i data-lucide="utensils-crossed" class="w-4 h-4"></i> Kewirausahaan & F&B
+                <div class="flex flex-col lg:flex-row justify-between items-end mb-16 reveal">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                            <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Pendidikan & Sinergi</h2>
                         </div>
-                        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-cute-text mb-4">
-                            Soigné Culinary <br class="hidden sm:block"> Consultant 👩🏻‍🍳
-                        </h2>
-                        <p class="text-cute-muted font-medium text-base sm:text-lg mb-6 leading-relaxed">
-                            Selain aktif di dunia akademik, saya juga berkecimpung di industri kuliner sebagai <strong>Chief Finance Officer (CFO)</strong> di Soigné. Kami membantu merancang konsep, manajemen kafe & restoran, hingga menciptakan pengalaman bersantap yang luar biasa.
-                        </p>
-                        
-                        <!-- Fitur Layanan F&B -->
-                        <ul class="space-y-3 mb-8 text-sm sm:text-base font-bold text-cute-text">
-                            <li class="flex items-center justify-center lg:justify-start gap-3">
-                                <div class="w-8 h-8 rounded-full bg-cute-lilaclight flex items-center justify-center text-cute-lilac shrink-0"><i data-lucide="chef-hat" class="w-4 h-4"></i></div>
-                                Resep Standar Hotel Bintang 5
-                            </li>
-                            <li class="flex items-center justify-center lg:justify-start gap-3">
-                                <div class="w-8 h-8 rounded-full bg-cute-pinklight flex items-center justify-center text-cute-pink shrink-0"><i data-lucide="badge-dollar-sign" class="w-4 h-4"></i></div>
-                                Analisis HPP & Penentuan Harga
-                            </li>
-                            <li class="flex items-center justify-center lg:justify-start gap-3">
-                                <div class="w-8 h-8 rounded-full bg-cute-lilaclight flex items-center justify-center text-cute-lilac shrink-0"><i data-lucide="book-open-check" class="w-4 h-4"></i></div>
-                                Standard Operating Procedure (SOP)
-                            </li>
-                        </ul>
+                        <h3 class="text-4xl md:text-5xl font-black text-urban-dark tracking-tight">Pengajaran & Kemitraan</h3>
                     </div>
+                </div>
 
-                    <!-- Visual / Image Area -->
-                    <div class="order-1 lg:order-2 flex justify-center">
-                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 bg-white rounded-full p-4 shadow-md border-4 border-dashed border-cute-pinklight">
-                            <!-- Background pattern dalam lingkaran -->
-                            <div class="absolute inset-2 bg-gradient-to-tr from-cute-pinklight to-cute-lilaclight rounded-full flex items-center justify-center flex-col text-center p-8">
-                                <i data-lucide="coffee" class="w-16 h-16 text-cute-pink mb-4 animate-wiggle"></i>
-                                <h3 class="font-heading font-bold text-2xl text-cute-text">SOIGNÉ</h3>
-                                <p class="text-xs font-bold text-cute-muted mt-1 uppercase tracking-widest">Achieve Culinary Excellence</p>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    
+                    <!-- Teaching (Left) -->
+                    <div class="w-full lg:w-1/2 reveal">
+                        <div class="mb-8">
+                            <h4 class="text-2xl font-bold text-urban-dark">Mata Kuliah Utama</h4>
+                            <p class="text-sm text-urban-gray mt-2">Didedikasikan untuk Program Studi Manajemen FEB UJB.</p>
+                        </div>
+                        
+                        <div class="relative border-l-2 border-urban-silver ml-3 md:ml-4 space-y-8">
+                            <div class="relative pl-8 group">
+                                <div class="absolute w-4 h-4 bg-urban-blueLight rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_#f8fafc] group-hover:scale-125 transition-transform"></div>
+                                <h4 class="text-lg font-bold text-urban-dark mb-1">Manajemen Strategis</h4>
+                            </div>
+                            <div class="relative pl-8 group">
+                                <div class="absolute w-4 h-4 bg-urban-silver rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_#f8fafc] group-hover:bg-urban-blueLight transition-colors"></div>
+                                <h4 class="text-lg font-bold text-urban-dark mb-1">Manajemen Operasional</h4>
+                            </div>
+                            <div class="relative pl-8 group">
+                                <div class="absolute w-4 h-4 bg-urban-silver rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_#f8fafc] group-hover:bg-urban-blueLight transition-colors"></div>
+                                <h4 class="text-lg font-bold text-urban-dark mb-1">Metodologi Penelitian</h4>
+                            </div>
+                            <div class="relative pl-8 group">
+                                <div class="absolute w-4 h-4 bg-urban-silver rounded-full -left-[9px] top-1 shadow-[0_0_0_4px_#f8fafc] group-hover:bg-urban-blueLight transition-colors"></div>
+                                <h4 class="text-lg font-bold text-urban-dark mb-1">Perilaku Organisasi</h4>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Collaboration Gallery (Right - SVG ANIMATIONS) -->
+                    <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                        <div class="reveal">
+                            <div class="mb-6">
+                                <h4 class="text-2xl font-bold text-urban-dark">Kolaborasi Inklusif</h4>
+                                <p class="text-sm text-urban-gray mt-2">Terbuka untuk inisiatif akademik dan profesional lintas disiplin.</p>
+                            </div>
+                            
+                            <div class="glass-card p-6 rounded-xl h-64 w-full flex items-center justify-center relative overflow-hidden bg-urban-darker/80 border border-urban-blueLight/20 group">
+                                <div class="absolute inset-0 bg-gradient-to-t from-urban-blueLight/10 to-transparent"></div>
+                                
+                                <!-- Handshake / Network Animation -->
+                                <svg class="w-32 h-32 text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.5)] anim-float" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" class="anim-draw text-cyan-300" />
+                                </svg>
+
+                                <div class="absolute bottom-4 left-4 right-4 grid grid-cols-2 gap-2 z-10 pointer-events-none">
+                                    <div class="bg-urban-dark/95 backdrop-blur px-3 py-2 rounded shadow-sm border-l-2 border-l-cyan-400">
+                                        <p class="text-[10px] text-cyan-300 font-semibold truncate">Riset Kolaboratif</p>
+                                    </div>
+                                    <div class="bg-urban-dark/95 backdrop-blur px-3 py-2 rounded shadow-sm border-l-2 border-l-cyan-400">
+                                        <p class="text-[10px] text-cyan-300 font-semibold truncate">Seminar Ahli</p>
+                                    </div>
+                                    <div class="bg-urban-dark/95 backdrop-blur px-3 py-2 rounded shadow-sm border-l-2 border-l-cyan-400">
+                                        <p class="text-[10px] text-cyan-300 font-semibold truncate">Konsultasi Bisnis & F&B</p>
+                                    </div>
+                                    <div class="bg-urban-dark/95 backdrop-blur px-3 py-2 rounded shadow-sm border-l-2 border-l-cyan-400">
+                                        <p class="text-[10px] text-cyan-300 font-semibold truncate">Pengembangan Kurikulum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- RESEARCH INTEREST CUTE GRID -->
-    <section id="penelitian" class="py-20 bg-cute-bg relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            
-            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-                <span class="text-cute-pink font-bold tracking-widest uppercase text-sm mb-2 block">Minat Keahlian</span>
-                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-cute-text mb-4">Penelitian & Area Riset </h2>
-                <p class="text-cute-muted font-medium px-4">Kajian strategis dengan sentuhan analitik untuk pengembangan manajemen modern.</p>
+        <!-- KARYA & PUBLIKASI SECTION -->
+        <section id="publikasi" class="py-24 relative z-10 bg-urban-dark text-white library-bg border-t border-white/5">
+            <div class="profile-overlay opacity-95"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 reveal text-center">
+                
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                    <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Peninggalan Akademik</h2>
+                    <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                </div>
+                <h3 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Karya Ilmiah & Publikasi</h3>
+                <p class="text-urban-silver max-w-2xl mx-auto text-sm leading-relaxed mb-10">Jelajahi berbagai kontribusi penelitian yang berfokus pada pengembangan sistem, evaluasi, dan pendekatan manajemen berbasis bukti (evidence-based).</p>
+                
+                <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" rel="noopener noreferrer" class="btn-corporate py-4 px-8 text-sm uppercase tracking-widest shadow-lg">
+                    Kunjungi Google Scholar <i class="fa-solid fa-graduation-cap ml-3"></i>
+                </a>
             </div>
+        </section>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <!-- Card 1 -->
-                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-pinklight transition-colors border-2 border-cute-pinklight">
-                        <i data-lucide="target" class="w-6 h-6 text-cute-pink"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Manajemen Strategis</h3>
-                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Analisis mendalam mengenai perumusan, implementasi, dan evaluasi keputusan lintas fungsional yang memastikan organisasi mencapai tujuannya.</p>
-                </div>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 relative z-10 academic-bg">
+            <div class="profile-overlay opacity-95"></div>
+            
+            <div class="max-w-6xl mx-auto px-6 reveal relative z-10">
+                <div class="dark-glass rounded-2xl p-8 md:p-16 shadow-2xl border border-white/10 overflow-hidden relative">
+                    
+                    <!-- Background Abstract -->
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-urban-blueLight/20 rounded-full blur-[80px]"></div>
 
-                <!-- Card 2 -->
-                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-100">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-lilaclight transition-colors border-2 border-cute-lilaclight">
-                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-cute-lilac"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Keputusan Berbasis Data</h3>
-                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Pemanfaatan analitik dan metrik objektif yang cantik untuk memandu arah perusahaan, mengurangi bias, dan meningkatkan akurasi.</p>
-                </div>
+                    <div class="flex flex-col lg:flex-row gap-16 relative z-10">
+                        
+                        <div class="w-full lg:w-5/12">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                                <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Informasi Kontak</h2>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl font-black text-white mb-6">Hubungi Nadia Syafa'at</h3>
+                            <p class="text-sm text-urban-silver/80 font-light leading-relaxed mb-10">
+                                Membuka ruang untuk kolaborasi akademik, konsultasi manajemen dan strategi bisnis F&B, maupun sekadar bertukar wawasan. Mari ciptakan sinergi.
+                            </p>
+                            
+                            <div class="space-y-6 font-sans">
+                                <div class="flex items-center gap-4 group cursor-default">
+                                    <div class="w-12 h-12 rounded bg-urban-blueLight/10 flex items-center justify-center text-urban-blueLight border border-urban-blueLight/30 group-hover:bg-urban-blueLight group-hover:text-white transition-colors">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[10px] font-bold tracking-widest uppercase text-urban-gray">Email Utama</h4>
+                                        <a href="mailto:nadia@ujb.ac.id" class="text-sm font-medium text-white hover:text-urban-blueLight transition-colors">nadia@ujb.ac.id</a>
+                                    </div>
+                                </div>
 
-                <!-- Card 3 -->
-                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-200">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-pinklight transition-colors border-2 border-cute-pinklight">
-                        <i data-lucide="activity" class="w-6 h-6 text-cute-pink"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Evaluasi Kinerja</h3>
-                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Pengembangan indikator dan metode pengukuran komprehensif untuk menilai efektivitas dan efisiensi operasional secara elegan.</p>
-                </div>
+                                <div class="flex items-center gap-4 group cursor-default">
+                                    <div class="w-12 h-12 rounded bg-urban-blueLight/10 flex items-center justify-center text-urban-blueLight border border-urban-blueLight/30 group-hover:bg-urban-blueLight group-hover:text-white transition-colors">
+                                        <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[10px] font-bold tracking-widest uppercase text-urban-gray">Afiliasi Universitas</h4>
+                                        <p class="text-sm font-medium text-white">Fakultas Ekonomi & Bisnis, UJB</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Card 4 -->
-                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal lg:col-span-1">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:bg-cute-lilaclight transition-colors border-2 border-cute-lilaclight">
-                        <i data-lucide="lightbulb" class="w-6 h-6 text-cute-lilac"></i>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Sistem & Inovasi</h3>
-                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Studi tentang adaptasi struktur baru dan praktik inovatif dalam merespon perubahan lingkungan bisnis yang dinamis.</p>
-                </div>
+                        <!-- Contact Form -->
+                        <div class="w-full lg:w-7/12">
+                            <form class="space-y-6 bg-white/5 p-8 rounded-xl border border-white/10" onsubmit="sendEmail(event)">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="senderName" class="block text-[10px] font-bold text-urban-gray uppercase tracking-widest mb-2">Nama Lengkap</label>
+                                        <input type="text" id="senderName" name="senderName" class="corp-input" placeholder="Masukkan Nama Anda" required>
+                                    </div>
+                                    <div>
+                                        <label for="senderEmail" class="block text-[10px] font-bold text-urban-gray uppercase tracking-widest mb-2">Alamat Email Anda</label>
+                                        <input type="email" id="senderEmail" name="senderEmail" class="corp-input" placeholder="contoh@email.com" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="emailSubject" class="block text-[10px] font-bold text-urban-gray uppercase tracking-widest mb-2">Topik / Subjek Pesan</label>
+                                    <input type="text" id="emailSubject" name="emailSubject" class="corp-input" placeholder="Undangan Kolaborasi Riset / Konsultasi F&B" required>
+                                </div>
+                                <div>
+                                    <label for="emailMessage" class="block text-[10px] font-bold text-urban-gray uppercase tracking-widest mb-2">Isi Pesan Detail</label>
+                                    <textarea id="emailMessage" name="emailMessage" rows="4" class="corp-input resize-none" placeholder="Deskripsikan dengan singkat tujuan diskusi Anda di sini..." required></textarea>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="btn-corporate w-full py-4 text-sm shadow-lg">
+                                        Kirim Pesan <i class="fa-solid fa-paper-plane ml-2" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
 
-                <!-- Card 5 -->
-                <div class="glass-cute p-8 rounded-[2.5rem] hover:-translate-y-2 transition-all duration-300 group reveal delay-100 lg:col-span-2 bg-gradient-to-br from-white to-cute-pinklight/30">
-                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border-2 border-cute-pink">
-                        <i data-lucide="users" class="w-6 h-6 text-cute-pink"></i>
                     </div>
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-3">Perilaku Organisasi</h3>
-                    <p class="text-cute-muted text-sm font-medium leading-relaxed">Investigasi empiris terhadap dinamika individu dan kelompok di dalam struktur organisasi, berfokus pada motivasi, kepemimpinan, dan budaya kerja guna meningkatkan kinerja keseluruhan yang harmonis.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- PUBLICATIONS CTA (PASTEL GRADIENT) -->
-    <section id="publikasi" class="py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-cute-pink via-purple-300 to-cute-lilac opacity-90"></div>
-        <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full mix-blend-overlay blur-xl opacity-50 animate-float"></div>
-        <div class="absolute bottom-10 right-20 w-48 h-48 bg-white rounded-full mix-blend-overlay blur-2xl opacity-40 animate-float-delayed"></div>
-
-        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center reveal glass-cute !bg-white/20 !border-white/40 p-8 sm:p-14 rounded-[3rem]">
-            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg transform rotate-[-10deg] hover:rotate-0 transition-transform">
-                <i data-lucide="book-open" class="w-10 h-10 text-cute-pink"></i>
-            </div>
+    <!-- FOOTER -->
+    <footer class="bg-urban-darker border-t border-white/5 py-10 text-center relative z-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
             
-            <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6 drop-shadow-md leading-tight">
-                Publikasi & Karya Ilmiah 
-            </h2>
-            
-            <p class="text-white font-medium text-base sm:text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto drop-shadow-sm px-2">
-                Jelajahi berbagai kontribusi penelitian yang berfokus pada pengembangan sistem, evaluasi, dan pendekatan manajemen berbasis bukti (*evidence-based*).
-            </p>
-            
-            <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-white text-cute-pink px-6 sm:px-8 py-4 rounded-full font-heading font-bold text-sm sm:text-lg hover:shadow-[0_10px_30px_rgba(255,255,255,0.4)] hover:-translate-y-1 transition-all w-full sm:w-auto">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.8 3.8v5.8h2.4v-4l4.8 3.8 12-9.5L12 0z"/></svg>
-                Kunjungi Google Scholar
+            <a href="#" class="text-2xl font-black tracking-tight text-white flex items-center justify-center gap-2 mb-8" aria-label="Kembali ke atas">
+                <div class="w-6 h-6 bg-urban-blueLight rounded flex items-center justify-center text-white text-xs" aria-hidden="true">N</div>
+                NADIA<span class="text-urban-blueLight">.</span>
             </a>
-        </div>
-    </section>
-
-    <!-- TEACHING & COLLABORATION (CUTE CARDS) -->
-    <section class="py-20 lg:py-28 bg-white relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-                
-                <!-- Teaching Column -->
-                <div id="pengajaran" class="reveal">
-                    <div class="inline-flex items-center gap-3 mb-8 bg-cute-pinklight px-5 py-2 rounded-full">
-                        <i data-lucide="graduation-cap" class="w-6 h-6 text-cute-pink"></i>
-                        <h2 class="text-2xl font-heading font-bold text-cute-pink">Pengajaran</h2>
-                    </div>
-                    <p class="text-cute-muted font-bold mb-6 pl-2">Mata kuliah utama yang diampu di FEB UJB:</p>
-                    
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
-                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
-                                <i data-lucide="layout-grid" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
-                            </div>
-                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Manajemen Strategis</h4>
-                        </li>
-                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
-                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
-                                <i data-lucide="settings" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
-                            </div>
-                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Manajemen Operasional</h4>
-                        </li>
-                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
-                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
-                                <i data-lucide="microscope" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
-                            </div>
-                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Metodologi Penelitian</h4>
-                        </li>
-                        <li class="flex items-center gap-4 bg-white p-4 rounded-2xl border-2 border-cute-pinklight shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group">
-                            <div class="w-10 h-10 bg-cute-bg rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
-                                <i data-lucide="network" class="w-5 h-5 text-cute-pink group-hover:text-white"></i>
-                            </div>
-                            <h4 class="font-bold text-cute-text text-base sm:text-lg">Perilaku Organisasi</h4>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Collaboration Column -->
-                <div id="kolaborasi" class="reveal delay-100">
-                    <div class="inline-flex items-center gap-3 mb-8 bg-cute-lilaclight px-5 py-2 rounded-full">
-                        <i data-lucide="handshake" class="w-6 h-6 text-cute-lilac"></i>
-                        <h2 class="text-2xl font-heading font-bold text-cute-lilac">Kolaborasi </h2>
-                    </div>
-                    <p class="text-cute-muted font-bold mb-6 pl-2">Terbuka untuk inisiatif akademik & profesional:</p>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
-                            <i data-lucide="flask-conical" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
-                            <h4 class="font-bold text-cute-text text-sm">Penelitian Kolaboratif</h4>
-                        </div>
-                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
-                            <i data-lucide="presentation" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
-                            <h4 class="font-bold text-cute-text text-sm">Seminar & Workshop</h4>
-                        </div>
-                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
-                            <i data-lucide="messages-square" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
-                            <h4 class="font-bold text-cute-text text-sm">Konsultasi Akademik</h4>
-                        </div>
-                        <div class="glass-cute p-5 rounded-3xl hover:bg-cute-lilaclight transition-colors text-center border-2 border-cute-lilaclight shadow-sm group flex flex-col justify-center">
-                            <i data-lucide="book-copy" class="w-8 h-8 text-cute-lilac mx-auto mb-3 group-hover:animate-wiggle shrink-0"></i>
-                            <h4 class="font-bold text-cute-text text-sm">Pengembangan Kurikulum</h4>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT & FOOTER CUTE -->
-    <footer id="kontak" class="bg-cute-pinklight pt-20 pb-10 relative overflow-hidden rounded-t-[3rem] mt-10">
-        <!-- Floating hearts in footer -->
-        <i data-lucide="heart" class="absolute top-10 left-10 sm:left-20 w-8 h-8 text-white opacity-50 animate-float"></i>
-        <i data-lucide="heart" class="absolute top-20 right-10 sm:right-32 w-12 h-12 text-cute-pink opacity-20 animate-float-delayed"></i>
-
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-            <div class="glass-cute bg-white/50 border-white p-6 sm:p-8 md:p-12 rounded-[3rem] grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12 reveal shadow-lg">
-                
-                <!-- Contact Info -->
-                <div class="text-center md:text-left">
-                    <h2 class="text-3xl font-heading font-bold text-cute-pink mb-4">Sapa Nadia </h2>
-                    <p class="text-cute-muted font-medium mb-8 max-w-sm mx-auto md:mx-0">Terbuka untuk diskusi mengenai riset, kolaborasi akademik, F&B, atau sekadar bertukar pikiran.</p>
-                    
-                    <div class="space-y-4 sm:space-y-5 flex flex-col items-center md:items-start">
-                        <!-- Email Link -->
-                        <a href="mailto:nadia@ujb.ac.id" class="flex items-center gap-4 text-cute-text hover:text-cute-pink transition-colors group bg-white py-3 px-6 rounded-full shadow-sm w-full sm:w-fit">
-                            <div class="w-8 h-8 bg-cute-pinklight rounded-full flex items-center justify-center shrink-0 group-hover:bg-cute-pink transition-colors">
-                                <i data-lucide="mail" class="w-4 h-4 group-hover:text-white"></i>
-                            </div>
-                            <span class="font-bold truncate">nadia@ujb.ac.id</span>
-                        </a>
-                        
-                        <!--  Social Media Icons yang Diperjelas -->
-                        <div class="flex items-center justify-center md:justify-start gap-4 sm:gap-5 mt-4 w-full">
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/nadiaasyafaat/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full flex items-center justify-center text-white bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] transition-all shadow-md hover:shadow-lg hover:-translate-y-1" title="Instagram">
-                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                            </a>
-                            
-                            <!-- Facebook -->
-                            <a href="https://www.facebook.com/syafaat.nadia/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full flex items-center justify-center text-white bg-[#1877F2] transition-all shadow-md hover:shadow-lg hover:-translate-y-1" title="Facebook">
-                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                            </a>
-
-                            <!-- Google Scholar -->
-                            <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full flex items-center justify-center text-white bg-[#4285F4] transition-all shadow-md hover:shadow-lg hover:-translate-y-1" title="Google Scholar">
-                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.8 3.8v5.8h2.4v-4l4.8 3.8 12-9.5L12 0z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTA Box -->
-                <div class="bg-white p-6 sm:p-8 rounded-[2.5rem] shadow-md text-center border-2 border-cute-bg relative overflow-hidden">
-                    <svg class="absolute -bottom-6 -right-6 w-24 h-24 text-cute-pinklight opacity-50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" stroke-dasharray="10 10"/>
-                    </svg>
-
-                    <!-- Animasi SVG Cewek Cantik Minum Coffee -->
-                    <div class="mx-auto mb-2 flex justify-center relative z-10">
-                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 sm:w-28 sm:h-28 drop-shadow-md">
-                            <!-- Body/Sweater -->
-                            <path d="M40 200 C40 130 160 130 160 200 Z" fill="#FCE7F3" />
-                            <path d="M80 130 L120 130 L100 160 Z" fill="#F472B6" opacity="0.2"/>
-                            
-                            <!-- Hair Back -->
-                            <path d="M50 100 C30 180 60 200 100 200 C140 200 170 180 150 100 Z" fill="#4C1D95" />
-                            
-                            <!-- Cozy Scarf (Syal Kehangatan) -->
-                            <path d="M55 130 C 80 150, 120 150, 145 130 C 150 135, 150 145, 145 150 C 120 170, 80 170, 55 150 C 50 145, 50 135, 55 130 Z" fill="#F472B6" />
-                            <path d="M125 140 L 135 180 L 115 180 Z" fill="#F472B6" />
-
-                            <!-- Face -->
-                            <path d="M65 100 C65 60 135 60 135 100 C135 130 115 140 100 140 C85 140 65 130 65 100 Z" fill="#FFE4E1" />
-                            
-                            <!-- Blush Merona -->
-                            <circle cx="76" cy="102" r="7" fill="#F472B6" opacity="0.5" />
-                            <circle cx="124" cy="102" r="7" fill="#F472B6" opacity="0.5" />
-                            
-                            <!-- Eyes -->
-                            <g class="eyes-open">
-                                <path d="M70 95 Q76 100 82 95" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                <path d="M118 95 Q124 100 130 95" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                <path d="M70 95 L67 92" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
-                                <path d="M130 95 L133 92" stroke="#4C1D95" stroke-width="2" stroke-linecap="round" />
-                            </g>
-                            <g class="eyes-closed" opacity="0">
-                                <path d="M70 98 Q76 96 82 98" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                                <path d="M118 98 Q124 96 130 98" stroke="#4C1D95" stroke-width="2.5" stroke-linecap="round" fill="none" />
-                            </g>
-
-                            <!-- Mouth -->
-                            <ellipse cx="100" cy="108" rx="3" ry="4" fill="#F472B6" opacity="0.9" />
-                            <path d="M100 113 L100 118" stroke="#FCE7F3" stroke-width="2" stroke-linecap="round" class="anim-blow" />
-
-                            <!-- Front Hair / Bangs -->
-                            <path d="M60 90 C60 50 140 50 140 90 C130 60 70 60 60 90 Z" fill="#4C1D95" />
-                            <path d="M100 50 C120 70 140 70 140 90 C120 80 110 50 100 50 Z" fill="#5B21B6" opacity="0.3"/>
-                            
-                            <!-- Mug Handle -->
-                            <path d="M125 125 C145 125 145 140 125 140" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" />
-                            
-                            <!-- Mug Body -->
-                            <path d="M70 115 L130 115 C130 145 70 145 70 115 Z" fill="#C084FC" />
-                            <path d="M70 115 Q100 122 130 115 Q100 108 70 115 Z" fill="#A855F7" />
-
-                            <!-- Sleeves -->
-                            <path d="M40 170 Q 50 130 80 128" stroke="#FCE7F3" stroke-width="18" stroke-linecap="round" fill="none" />
-                            <path d="M160 170 Q 150 130 120 128" stroke="#FCE7F3" stroke-width="18" stroke-linecap="round" fill="none" />
-
-                            <!-- Hands -->
-                            <circle cx="82" cy="128" r="6" fill="#FFE4E1" />
-                            <circle cx="118" cy="128" r="6" fill="#FFE4E1" />
-                            <path d="M82 125 L86 125 M82 128 L86 128 M82 131 L86 131" stroke="#E5B3B3" stroke-width="1" stroke-linecap="round" />
-                            <path d="M118 125 L114 125 M118 128 L114 128 M118 131 L114 131" stroke="#E5B3B3" stroke-width="1" stroke-linecap="round" />
-
-                            <!-- Extra Steam -->
-                            <g class="anim-steam" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8">
-                                <path d="M85 105 Q75 85 90 70" />
-                                <path d="M100 100 Q110 80 95 65" />
-                                <path d="M115 105 Q125 85 110 70" />
-                            </g>
-                            
-                            <!-- Heat sparkles -->
-                            <path d="M62 125 L66 120 M138 125 L134 120" stroke="#F472B6" stroke-width="2" stroke-linecap="round" class="animate-pulse" />
-                        </svg>
-                    </div>
-                    
-                    <h3 class="text-xl font-heading font-bold text-cute-text mb-2 relative z-10">Mari Ngopi & Diskusi</h3>
-                    <p class="text-cute-muted text-sm font-medium mb-6 relative z-10 px-2">Jangan ragu untuk mengirim pesan untuk ngobrol santai seputar manajemen, F&B, & riset.</p>
-                    <a href="mailto:nadia@ujb.ac.id" class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-cute-pink to-cute-lilac text-white px-8 py-3.5 rounded-full font-bold hover:shadow-lg hover:-translate-y-1 transition-all w-full relative z-10">
-                        <i data-lucide="send" class="w-4 h-4"></i> Kirim Pesan
-                    </a>
-                </div>
-
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8" aria-label="Footer Social Media Links">
+                <a href="https://www.instagram.com/nadiaasyafaat/" target="_blank" title="Instagram" aria-label="Instagram" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/syafaat.nadia/" target="_blank" title="Facebook" aria-label="Facebook" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" title="Google Scholar" aria-label="Google Scholar" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
             </div>
 
-            <div class="border-t-2 border-white pt-6 pb-4 flex flex-col sm:flex-row justify-between items-center gap-4 reveal delay-100">
-                <p class="text-cute-muted font-bold text-xs sm:text-sm flex items-center gap-1 text-center">
-                    &copy; <script>document.write(new Date().getFullYear())</script> Nadia Syafa'at. Dibuat dengan <i data-lucide="heart" class="w-4 h-4 text-cute-pink fill-current"></i>
-                </p>
-                <p class="text-cute-pink font-bold text-xs sm:text-sm bg-white px-4 py-1.5 rounded-full shadow-sm text-center">
-                    FEB, Universitas Janabadra
-                </p>
-            </div>
+            <p class="font-sans text-[10px] text-urban-gray font-bold tracking-[0.2em] uppercase">
+                &copy; <script>document.write(new Date().getFullYear())</script> PROFIL PROFESIONAL NADIA SYAFA'AT.
+            </p>
         </div>
     </footer>
 
-    <!-- INTERACTIVE JAVASCRIPT -->
+    <!-- INTERACTIVE SCRIPTS -->
     <script>
-        // 1. Initialize Lucide Icons
-        lucide.createIcons();
-
-        // 2. Mobile Menu Logic with Smooth Transitions and Icon Swapping
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('menu-icon-open');
-        const iconClose = document.getElementById('menu-icon-close');
-        let isMenuOpen = false;
-
-        btn.addEventListener('click', () => {
-            isMenuOpen = !isMenuOpen;
+        document.addEventListener('DOMContentLoaded', () => {
             
-            if (isMenuOpen) {
-                // Show menu panel
-                menu.classList.remove('opacity-0', 'invisible', 'translate-y-[-10px]');
-                menu.classList.add('opacity-100', 'visible', 'translate-y-0');
-                
-                // Swap icon to X
-                iconOpen.classList.add('opacity-0', 'scale-50');
-                iconClose.classList.remove('opacity-0', 'scale-50');
-            } else {
-                // Hide menu panel
-                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                menu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
-                
-                // Swap icon back to Menu
-                iconClose.classList.add('opacity-0', 'scale-50');
-                iconOpen.classList.remove('opacity-0', 'scale-50');
-            }
-        });
-
-        // Close mobile menu on clicking any link
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                isMenuOpen = false;
-                
-                // Hide menu panel
-                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                menu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
-                
-                // Swap icon back to Menu
-                iconClose.classList.add('opacity-0', 'scale-50');
-                iconOpen.classList.remove('opacity-0', 'scale-50');
-            });
-        });
-
-        // 3. Scroll Reveal Animation Logic
-        const observerOptions = { 
-            threshold: 0.1, 
-            rootMargin: "0px 0px -50px 0px" 
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
+            // --- 1. NAVBAR BLUR EFFECT ON SCROLL ---
+            const nav = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('bg-urban-dark/95', 'backdrop-blur-md', 'border-b-white/10', 'shadow-lg', 'py-4');
+                    nav.classList.remove('border-transparent', 'py-5');
+                } else {
+                    nav.classList.remove('bg-urban-dark/95', 'backdrop-blur-md', 'border-b-white/10', 'shadow-lg', 'py-4');
+                    nav.classList.add('border-transparent', 'py-5');
                 }
             });
-        }, observerOptions);
 
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            // Mobile menu toggle (simple version for this template)
+            const mobileBtn = document.querySelector('button[aria-label="Buka Menu"]');
+            const menuPanel = document.getElementById('mobile-menu'); // Added mobile menu logic if needed
+
+            // --- 2. SCROLL REVEAL ANIMATION ---
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+
+            // --- 3. SEND EMAIL FUNCTION (MAILTO) ---
+            window.sendEmail = function(event) {
+                event.preventDefault(); // Mencegah reload halaman
+                
+                // Ambil data dari input form
+                const name = document.getElementById('senderName').value;
+                const email = document.getElementById('senderEmail').value;
+                const subject = document.getElementById('emailSubject').value;
+                const message = document.getElementById('emailMessage').value;
+                
+                // Siapkan tujuan dan format isi email
+                const targetEmail = "nadia@ujb.ac.id";
+                const mailtoSubject = encodeURIComponent(subject);
+                const mailtoBody = encodeURIComponent(`Halo Nadia,\n\nNama: ${name}\nEmail Pengirim: ${email}\n\nPesan:\n${message}`);
+                
+                // Buka aplikasi email bawaan pengguna (Gmail, Outlook, dll)
+                window.location.href = `mailto:${targetEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+            };
+
+            // --- 4. ANIMATED COUNTER SCRIPT ---
+            const counters = document.querySelectorAll('.counter');
+            
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        const target = entry.target;
+                        const endValue = parseInt(target.getAttribute('data-target'));
+                        const duration = 2000; // 2 seconds
+                        let startTime = null;
+
+                        const step = (timestamp) => {
+                            if (!startTime) startTime = timestamp;
+                            const progress = Math.min((timestamp - startTime) / duration, 1);
+                            // Easing out function for smoother stop
+                            const easeProgress = 1 - Math.pow(1 - progress, 4);
+                            
+                            target.innerText = Math.floor(easeProgress * endValue);
+                            
+                            if (progress < 1) {
+                                window.requestAnimationFrame(step);
+                            } else {
+                                target.innerText = endValue;
+                            }
+                        };
+                        window.requestAnimationFrame(step);
+                        observer.unobserve(target); // Only animate once
+                    }
+                });
+            }, { threshold: 0.5 }); // Start when 50% visible
+
+            counters.forEach(counter => counterObserver.observe(counter));
+
+        });
     </script>
 </body>
 </html>
