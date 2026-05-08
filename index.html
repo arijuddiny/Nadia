@@ -336,7 +336,10 @@
                     <a href="#bisnis" class="hover:text-amber-400 transition-colors mobile-link text-amber-400 font-bold block border-b border-white/10 pb-2">Bisnis F&B</a>
                     <a href="#riset" class="hover:text-white transition-colors mobile-link block border-b border-white/10 pb-2">Riset & Keahlian</a>
                     <a href="#pengajaran" class="hover:text-white transition-colors mobile-link block border-b border-white/10 pb-2">Pengajaran</a>
+                    
+                    <!-- 🛠️ TOMBOL MENU PDF MOBILE -->
                     <a href="#" class="open-pdf-btn hover:text-amber-400 text-emerald-300 transition-colors mobile-link block border-b border-white/10 pb-2">Proposal Tim</a>
+                    
                     <a href="#contact" class="hover:text-white transition-colors mobile-link block pb-2">Kontak</a>
                 </div>
             </div>
@@ -937,7 +940,7 @@
                 </div>
 
                 <!-- State: Success (Iframe) -->
-                <iframe id="pdf-iframe" class="w-full h-full border-none hidden" title="PDF Viewer" loading="lazy"></iframe>
+                <iframe id="pdf-iframe" class="w-full h-full border-none hidden" title="PDF Viewer"></iframe>
             </div>
         </div>
     </div>
@@ -1062,10 +1065,10 @@
 
             counters.forEach(counter => counterObserver.observe(counter));
 
-            // --- 5. MODULAR PDF VIEWER SYSTEM ---
+            // --- 5. MODULAR PDF VIEWER SYSTEM (OPTIMIZED FOR SPEED & CACHING) ---
             // 🛠️ TUTORIAL EDIT: 23. UBAH NAMA FILE PDF ANDA DI SINI
-            // Pastikan jika ada spasi, diubah menjadi %20 (Contoh: "File%20Proposal.pdf")
-            const pdfFile = "Soigne%20Project%20Proposal.pdf"; // Variabel dinamis letak file
+            const pdfFileName = "Soigne Project Proposal.pdf"; // Nama file asli saat didownload pengguna
+            const pdfFileUrl = "Soigne%20Project%20Proposal.pdf"; // Variabel dinamis letak file (URL Encoded, spasi jadi %20)
             
             const pdfModal = document.getElementById('pdf-modal');
             const pdfModalContent = document.getElementById('pdf-modal-content');
@@ -1075,11 +1078,12 @@
             const pdfError = document.getElementById('pdf-error');
             const pdfRetryBtn = document.getElementById('pdf-retry-btn');
             
-            // Set href dinamis untuk tombol download dan new tab
+            // Set href dinamis untuk tombol download dan new tab (di dalam modal)
             const downloadBtn = document.getElementById('pdf-download-btn');
             const newTabBtn = document.getElementById('pdf-newtab-btn');
-            if(downloadBtn) downloadBtn.href = pdfFile;
-            if(newTabBtn) newTabBtn.href = pdfFile;
+            
+            // Cache untuk menyimpan file PDF di memori RAM agar tidak berulang kali memakan kuota/loading
+            let pdfBlobUrl = null;
 
             const openPdfModal = () => {
                 pdfModal.classList.remove('hidden');
@@ -1103,38 +1107,53 @@
                 
                 setTimeout(() => {
                     pdfModal.classList.add('hidden');
-                    pdfIframe.src = ''; // Bersihkan iframe untuk menghemat memori
-                    pdfIframe.classList.add('hidden');
+                    // Tidak menghapus iframe src, kita biarkan saja (cache memori) agar jika dibuka lagi langsung instan
                 }, 300);
             };
 
-            const loadPDF = () => {
+            const loadPDF = async () => {
+                // MENGATASI LEMOT: Gunakan Blob Fetching
+                // Jika PDF sudah pernah di-download ke memori lokal di sesi ini, langsung tampilkan (0 detik)
+                if (pdfBlobUrl) {
+                    pdfLoading.classList.add('hidden');
+                    pdfIframe.classList.remove('hidden');
+                    return;
+                }
+
                 pdfLoading.classList.remove('hidden');
                 pdfError.classList.add('hidden');
                 pdfIframe.classList.add('hidden');
                 
                 try {
-                    // Validasi keberadaan file menggunakan FETCH HEAD
-                    fetch(pdfFile, { method: 'HEAD' })
-                        .then(res => {
-                            if (res.ok) {
-                                // File ada, muat ke iframe
-                                pdfIframe.src = pdfFile + "#view=FitH&toolbar=0"; 
-                                pdfIframe.onload = () => {
-                                    pdfLoading.classList.add('hidden');
-                                    pdfIframe.classList.remove('hidden');
-                                };
-                            } else {
-                                throw new Error('File not found');
-                            }
-                        })
-                        .catch(err => {
-                            // Error handling elegan tanpa console.error agar bersih di log
-                            pdfLoading.classList.add('hidden');
-                            pdfError.classList.remove('hidden');
-                        });
+                    // Mengambil file sepenuhnya ke dalam Blob (Memori) sebelum ditampilkan.
+                    // Ini secara drastis memperbaiki performa scroll pada iframe untuk PDF berukuran besar.
+                    const response = await fetch(pdfFileUrl);
+                    
+                    if (!response.ok) {
+                        throw new Error('File not found or network error');
+                    }
+                    
+                    const blob = await response.blob();
+                    pdfBlobUrl = URL.createObjectURL(blob); // Konversi file jadi URL lokal internal
+                    
+                    // Render PDF dari memori
+                    pdfIframe.src = pdfBlobUrl + "#view=FitH&toolbar=0"; 
+                    
+                    // Update tombol download agar mengunduh instan dari memori
+                    if(downloadBtn) {
+                        downloadBtn.href = pdfBlobUrl;
+                        downloadBtn.download = pdfFileName;
+                    }
+                    if(newTabBtn) {
+                        newTabBtn.href = pdfBlobUrl;
+                    }
+
+                    pdfIframe.onload = () => {
+                        pdfLoading.classList.add('hidden');
+                        pdfIframe.classList.remove('hidden');
+                    };
                 } catch (err) {
-                    // Tangkap error sinkron jika URL gagal di-parse di environment sandbox/preview
+                    // Tangkap error dengan aman tanpa peringatan/alert ke pengguna
                     pdfLoading.classList.add('hidden');
                     pdfError.classList.remove('hidden');
                 }
@@ -1158,7 +1177,7 @@
                     e.preventDefault(); // Cegah default link jump
                     openPdfModal();
                     
-                    // Jika diklik dari mobile menu, tutup mobile menu-nya
+                    // Jika diklik dari mobile menu, tutup mobile menu-nya otomatis
                     if(isMenuOpen && menuPanel) {
                         isMenuOpen = false;
                         menuPanel.style.maxHeight = '0';
