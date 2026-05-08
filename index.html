@@ -1068,7 +1068,7 @@
             // --- 5. MODULAR PDF VIEWER SYSTEM (OPTIMIZED FOR SPEED & CACHING) ---
             // 🛠️ TUTORIAL EDIT: 23. UBAH NAMA FILE PDF ANDA DI SINI
             const pdfFileName = "Soigne Project Proposal.pdf"; // Nama file asli saat didownload pengguna
-            const pdfFileUrl = "Soigne%20Project%20Proposal.pdf"; // Variabel dinamis letak file (URL Encoded, spasi jadi %20)
+            const pdfFileUrl = encodeURI("Soigne Project Proposal.pdf"); // Mengamankan spasi URL secara otomatis
             
             const pdfModal = document.getElementById('pdf-modal');
             const pdfModalContent = document.getElementById('pdf-modal-content');
@@ -1112,8 +1112,7 @@
             };
 
             const loadPDF = async () => {
-                // MENGATASI LEMOT: Gunakan Blob Fetching
-                // Jika PDF sudah pernah di-download ke memori lokal di sesi ini, langsung tampilkan (0 detik)
+                // Jika PDF sudah pernah dimuat di memori, tampilkan instan (0 detik)
                 if (pdfBlobUrl) {
                     pdfLoading.classList.add('hidden');
                     pdfIframe.classList.remove('hidden');
@@ -1125,38 +1124,52 @@
                 pdfIframe.classList.add('hidden');
                 
                 try {
-                    // Mengambil file sepenuhnya ke dalam Blob (Memori) sebelum ditampilkan.
-                    // Ini secara drastis memperbaiki performa scroll pada iframe untuk PDF berukuran besar.
+                    // Deteksi jika dibuka langsung via klik ganda (file:// protocol)
+                    if (window.location.protocol === 'file:') {
+                        throw new Error('Local file protocol detected');
+                    }
+
+                    // Metode Ekstra Cepat via Memori RAM (Fetch API)
                     const response = await fetch(pdfFileUrl);
                     
-                    if (!response.ok) {
-                        throw new Error('File not found or network error');
-                    }
+                    if (!response.ok) throw new Error('File not found');
                     
                     const blob = await response.blob();
-                    pdfBlobUrl = URL.createObjectURL(blob); // Konversi file jadi URL lokal internal
+                    pdfBlobUrl = URL.createObjectURL(blob); 
                     
-                    // Render PDF dari memori
                     pdfIframe.src = pdfBlobUrl + "#view=FitH&toolbar=0"; 
                     
-                    // Update tombol download agar mengunduh instan dari memori
                     if(downloadBtn) {
                         downloadBtn.href = pdfBlobUrl;
                         downloadBtn.download = pdfFileName;
                     }
-                    if(newTabBtn) {
-                        newTabBtn.href = pdfBlobUrl;
-                    }
+                    if(newTabBtn) newTabBtn.href = pdfBlobUrl;
 
-                    pdfIframe.onload = () => {
-                        pdfLoading.classList.add('hidden');
-                        pdfIframe.classList.remove('hidden');
-                    };
                 } catch (err) {
-                    // Tangkap error dengan aman tanpa peringatan/alert ke pengguna
-                    pdfLoading.classList.add('hidden');
-                    pdfError.classList.remove('hidden');
+                    // FALLBACK: Jika dibuka via file:// atau fetch diblokir
+                    // Langsung panggil via iframe URL biasa
+                    pdfIframe.src = pdfFileUrl + "#view=FitH&toolbar=0";
+                    
+                    if(downloadBtn) {
+                        downloadBtn.href = pdfFileUrl;
+                        downloadBtn.download = pdfFileName;
+                    }
+                    if(newTabBtn) newTabBtn.href = pdfFileUrl;
                 }
+
+                // Jalankan saat iframe berhasil memuat file (Metode Fetch maupun Fallback)
+                pdfIframe.onload = () => {
+                    pdfLoading.classList.add('hidden');
+                    pdfIframe.classList.remove('hidden');
+                };
+
+                // Sistem Timeout untuk file yang benar-benar tidak ada
+                setTimeout(() => {
+                    if (!pdfLoading.classList.contains('hidden')) {
+                        pdfLoading.classList.add('hidden');
+                        pdfError.classList.remove('hidden');
+                    }
+                }, 5000);
             };
 
             // Event Listeners PDF System
