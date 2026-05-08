@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
+    <!-- 🛠️ TUTORIAL EDIT: 1. UBAH META TAG SEO -->
+    <!-- Ganti isi <title>, <meta name="description">, dan keywords di bawah ini sesuai data Anda -->
     <title>Nadia Syafa’at, S.E., M.M., CMA | Akademisi & Eksekutif F&B</title>
     <meta name="description" content="Profil akademik dan profesional Nadia Syafa’at, Dosen Manajemen FEB Universitas Janabadra & CFO Soigné Culinary Consultant. Fokus pada riset berbasis data dan inovasi bisnis kuliner.">
     <meta name="keywords" content="Nadia Syafaat, Dosen Manajemen UJB, FEB UJB, Universitas Janabadra, Konsultan F&B, Soigné Culinary Consultant, Dosen Ekonomi Jogja, Manajemen Strategis, Bisnis F&B">
@@ -12,6 +14,8 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph for Social Media -->
+    <!-- 🛠️ TUTORIAL EDIT: 2. UBAH META SOSIAL MEDIA -->
+    <!-- Ganti judul dan deskripsi yang muncul saat link website Anda dibagikan di WA/Sosmed -->
     <meta property="og:title" content="Nadia Syafa’at | Dosen & Konsultan Bisnis F&B">
     <meta property="og:description" content="Membangun generasi manajer adaptif dan merancang ekosistem kuliner dengan pendekatan riset berbasis data.">
     <meta property="og:type" content="profile">
@@ -60,6 +64,8 @@
                     },
                     colors: {
                         urban: {
+                            /* 🛠️ TUTORIAL EDIT: 3. UBAH TEMA WARNA */
+                            /* Jika ingin mengubah warna utama website, ganti kode HEX di bawah ini */
                             dark: '#0a192f',      /* Deep Navy Blue (Biru Gelap) */
                             darker: '#060f1e',    /* Darker Navy */
                             blue: '#1e40af',      /* Blue 800 */
@@ -249,12 +255,20 @@
             stroke-dasharray: 1000;
             animation: drawPath 4s alternate infinite ease-in-out;
         }
+
+        /* Instagram Embed Fixes for dark themes */
+        .instagram-media {
+            border-radius: 12px !important;
+            box-shadow: none !important;
+            overflow: hidden !important;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-urban-blueLight selection:text-white">
 
     <!-- RUNNING TEXT / TICKER -->
     <div class="fixed top-0 left-0 w-full h-8 bg-urban-blue/95 backdrop-blur-md text-white z-[60] flex items-center overflow-hidden border-b border-white/20 shadow-md">
+        <!-- 🛠️ TUTORIAL EDIT: 4. UBAH TEKS BERJALAN (RUNNING TEXT) DI ATAS HALAMAN -->
         <div class="animate-marquee whitespace-nowrap text-[11px] md:text-xs font-semibold tracking-wider flex items-center gap-6">
             <span>✨ Selamat Datang di Profil Profesional Nadia Syafa’at, S.E., M.M., CMA.</span>
             <span class="text-cyan-300">•</span>
@@ -272,11 +286,13 @@
     <nav class="fixed top-8 w-full z-50 transition-all duration-500 py-5 border-b border-transparent" id="navbar">
         <div class="max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center relative">
             <a href="#" class="text-2xl font-black tracking-tight text-white flex items-center gap-2" aria-label="Beranda">
+                <!-- 🛠️ TUTORIAL EDIT: 5. UBAH INISIAL DAN NAMA DI LOGO NAVBAR -->
                 <div class="w-8 h-8 bg-urban-blueLight rounded flex items-center justify-center text-white text-sm" aria-hidden="true">N</div>
                 NADIA<span class="text-urban-blueLight">.</span>
             </a>
             
             <div class="hidden md:flex space-x-6 lg:space-x-8 font-semibold text-[11px] tracking-widest text-urban-silver uppercase items-center">
+                <!-- 🛠️ TUTORIAL EDIT: 6. UBAH TAUTAN MENU NAVBAR DESKTOP -->
                 <a href="#about" class="hover:text-white transition-colors relative group" title="Profil Nadia Syafa'at">
                     Profil
                     <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
@@ -294,7 +310,7 @@
                     <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-urban-blueLight transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 
-                <!-- 🛠️ TOMBOL MENU PDF -->
+                <!-- TOMBOL MENU PDF -->
                 <a href="#" class="open-pdf-btn hover:text-amber-400 transition-colors relative group text-emerald-300 font-bold" title="Proposal Tim Soigné">
                     Proposal Tim
                     <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
@@ -313,15 +329,14 @@
             
             <!-- Mobile Menu Panel -->
             <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-urban-darker/95 backdrop-blur-md border-b border-white/10 shadow-xl overflow-hidden transition-all duration-300 max-h-0 opacity-0 mt-4 rounded-b-xl">
+                <!-- 🛠️ TUTORIAL EDIT: 7. UBAH TAUTAN MENU NAVBAR MOBILE -->
+                <!-- Pastikan samakan teks dengan menu Desktop di atas -->
                 <div class="flex flex-col px-6 py-6 space-y-5 font-semibold text-xs tracking-widest text-urban-silver uppercase">
                     <a href="#about" class="hover:text-white transition-colors mobile-link block border-b border-white/10 pb-2">Profil</a>
                     <a href="#bisnis" class="hover:text-amber-400 transition-colors mobile-link text-amber-400 font-bold block border-b border-white/10 pb-2">Bisnis F&B</a>
                     <a href="#riset" class="hover:text-white transition-colors mobile-link block border-b border-white/10 pb-2">Riset & Keahlian</a>
                     <a href="#pengajaran" class="hover:text-white transition-colors mobile-link block border-b border-white/10 pb-2">Pengajaran</a>
-                    
-                    <!-- 🛠️ TOMBOL MENU PDF MOBILE -->
                     <a href="#" class="open-pdf-btn hover:text-amber-400 text-emerald-300 transition-colors mobile-link block border-b border-white/10 pb-2">Proposal Tim</a>
-                    
                     <a href="#contact" class="hover:text-white transition-colors mobile-link block pb-2">Kontak</a>
                 </div>
             </div>
@@ -343,6 +358,7 @@
                 
                 <!-- Hero Text -->
                 <div class="w-full md:w-3/5 text-center md:text-left order-2 md:order-1 animate-fade-in-up">
+                    <!-- 🛠️ TUTORIAL EDIT: 8. UBAH TEKS HERO SECTION -->
                     <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-urban-blueLight/50 bg-urban-blueLight/10 text-urban-blueLight text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(59,130,246,0.3)]">
                         <span class="w-2 h-2 rounded-full bg-urban-blueLight animate-pulse-slow"></span>
                         Akademisi & Eksekutif F&B
@@ -377,18 +393,23 @@
                         <div class="relative dark-glass p-4 rounded-xl w-full border border-white/20 group overflow-hidden bg-urban-darker/90">
                             <div class="absolute top-0 -left-[150%] h-full w-[100%] z-20 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:left-[150%] transition-all duration-1000 ease-in-out pointer-events-none"></div>
 
+                            <!-- Area Foto -->
                             <div class="aspect-[4/5] w-full rounded-lg overflow-hidden relative shadow-[0_0_20px_rgba(0,0,0,0.5)] bg-urban-darker">
-                                <img src="nadia.jpeg" onerror="this.onerror=null;this.src='nadia.jpeg" alt="Nadia Syafa'at - Dosen dan F&B Entrepreneur" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                <!-- 🛠️ TUTORIAL EDIT: 9. UBAH FOTO HERO UTAMA -->
+                                <!-- Ubah atribut src="nadia.jpg" sesuai nama file gambar Anda -->
+                                <img src="nadia.jpeg" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Nadia+Syafaat&background=0a192f&color=3b82f6&size=512';" alt="Nadia Syafa'at - Dosen dan F&B Entrepreneur" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-gradient-to-t from-urban-darker/80 via-transparent to-transparent opacity-60 pointer-events-none"></div>
                             </div>
                             
                             <div class="mt-5 border-t border-white/10 pt-4 flex flex-col gap-4 relative z-10">
+                                <!-- 🛠️ TUTORIAL EDIT: 10. UBAH TEKS DI KARTU FOTO HERO -->
                                 <div>
                                     <h2 class="text-white font-bold text-lg flex items-center gap-2 group-hover:text-cyan-300 transition-colors">
                                         Nadia Syafa'at <i class="fa-solid fa-circle-check text-cyan-400 text-sm" title="Verified Professional"></i>
                                     </h2>
                                     <p class="text-urban-blueLight text-[10px] font-bold uppercase tracking-widest mt-1">FEB Univ. Janabadra</p>
                                 </div>
+                                <!-- 🛠️ TUTORIAL EDIT: 11. UBAH LINK MEDIA SOSIAL HERO -->
                                 <div class="flex flex-wrap gap-3 text-urban-silver" aria-label="Tautan Sosial Media">
                                     <a href="https://www.instagram.com/nadiaasyafaat/" target="_blank" title="Instagram Resmi" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E1306C] hover:text-white transition-all hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="https://www.facebook.com/syafaat.nadia/" target="_blank" title="Profil Facebook" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-all hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
@@ -403,6 +424,7 @@
         </header>
 
         <!-- ABOUT SECTION -->
+        <!-- 🛠️ TUTORIAL EDIT: 12. UBAH BAGIAN ABOUT / PROFIL SINGKAT -->
         <section id="about" class="py-24 relative z-10 grid-bg">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col lg:flex-row gap-16 items-center reveal">
@@ -499,6 +521,7 @@
         </section>
 
         <!-- SOIGNÉ BUSINESS SECTION (EMERALD/AMBER THEME) -->
+        <!-- 🛠️ TUTORIAL EDIT: 13. UBAH BAGIAN BISNIS F&B (SOIGNÉ) -->
         <section id="bisnis" class="py-24 relative z-10 bg-emerald-950 text-white overflow-hidden shadow-2xl">
             <!-- Decorative Background Gradients -->
             <div class="absolute inset-0 z-0 pointer-events-none">
@@ -545,7 +568,7 @@
                         </div>
                     </div>
                     
-                    <!-- 🛠️ TOMBOL TAMBAHAN BACA PROPOSAL PDF -->
+                    <!-- TOMBOL TAMBAHAN BACA PROPOSAL PDF -->
                     <div class="mt-10 flex justify-center">
                         <button class="open-pdf-btn inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border border-amber-400 text-amber-400 font-bold hover:bg-amber-400 hover:text-emerald-950 transition-all shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:-translate-y-1 focus:outline-none">
                             <i class="fa-solid fa-file-pdf text-xl" aria-hidden="true"></i> Baca Proposal Tim Soigné
@@ -570,6 +593,7 @@
         </section>
 
         <!-- RISET & KEAHLIAN SECTION -->
+        <!-- 🛠️ TUTORIAL EDIT: 14. UBAH BAGIAN FOKUS RISET & KEAHLIAN -->
         <section id="riset" class="py-24 relative z-10 bg-urban-dark text-white economy-bg">
             <div class="profile-overlay opacity-95"></div>
             <div class="max-w-7xl mx-auto px-6 relative z-10 reveal">
@@ -616,6 +640,7 @@
         </section>
 
         <!-- PENGAJARAN & KOLABORASI SECTION -->
+        <!-- 🛠️ TUTORIAL EDIT: 15. UBAH BAGIAN PENGAJARAN & KOLABORASI -->
         <section id="pengajaran" class="py-24 relative z-10 grid-bg">
             <div class="max-w-7xl mx-auto px-6">
                 
@@ -700,26 +725,72 @@
             </div>
         </section>
 
-        <!-- KARYA & PUBLIKASI SECTION -->
+        <!-- KARYA, PUBLIKASI & AKTIVITAS SECTION -->
+        <!-- 🛠️ TUTORIAL EDIT: 16. UBAH BAGIAN KARYA & PUBLIKASI -->
         <section id="publikasi" class="py-24 relative z-10 bg-urban-dark text-white library-bg border-t border-white/5">
             <div class="profile-overlay opacity-95"></div>
-            <div class="max-w-7xl mx-auto px-6 relative z-10 reveal text-center">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
                 
-                <div class="flex items-center justify-center gap-3 mb-4">
-                    <div class="h-[2px] w-8 bg-urban-blueLight"></div>
-                    <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Peninggalan Akademik</h2>
-                    <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    
+                    <!-- Left: Publikasi & Scholar -->
+                    <div class="reveal text-center lg:text-left">
+                        <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                            <div class="h-[2px] w-8 bg-urban-blueLight"></div>
+                            <h2 class="font-sans text-xs font-bold tracking-[0.2em] text-urban-blueLight uppercase">Jejak Karya & Sorotan</h2>
+                        </div>
+                        <h3 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Publikasi & Aktivitas Terkini</h3>
+                        <p class="text-urban-silver text-sm leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+                            Jelajahi berbagai kontribusi penelitian akademik serta pantau sorotan aktivitas, agenda kolaborasi, dan program kemitraan terbaru kami dalam memajukan ekosistem pendidikan dan bisnis.
+                        </p>
+                        
+                        <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" rel="noopener noreferrer" class="btn-corporate py-4 px-8 text-sm uppercase tracking-widest shadow-lg">
+                            Kunjungi Google Scholar <i class="fa-solid fa-graduation-cap ml-3"></i>
+                        </a>
+                    </div>
+
+                    <!-- Right: Activity Highlight with Image -->
+                    <div class="reveal flex justify-center lg:justify-end" style="animation-delay: 0.2s;">
+                        <div class="glass-card p-4 rounded-2xl w-full max-w-[420px] bg-urban-darker/80 border border-urban-blueLight/20 shadow-2xl relative overflow-hidden group">
+                            <!-- Animated Background -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-urban-blue/20 to-cyan-500/10 animate-pulse-slow"></div>
+                            
+                            <!-- Container for Image Highlight -->
+                            <div class="relative z-10 w-full rounded-xl overflow-hidden shadow-inner bg-urban-dark aspect-square md:aspect-video flex flex-col justify-end">
+                                <!-- 🛠️ TUTORIAL EDIT: 17. GANTI FOTO AKTIVITAS / SOROTAN -->
+                                <!-- Ubah "foto.jpeg" sesuai nama file gambar Anda -->
+                                <img src="ig.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop';" alt="Sorotan Aktivitas Terkini" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                                
+                                <!-- Gradient overlay for text readability -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-urban-darker via-urban-darker/40 to-transparent opacity-90 pointer-events-none"></div>
+
+                                <!-- Text content over image -->
+                                <!-- 🛠️ TUTORIAL EDIT: 18. UBAH TEKS CAPTION FOTO SOROTAN -->
+                                <div class="relative z-20 p-6 w-full">
+                                    <h4 class="text-white font-bold text-lg mb-2">Penandatanganan MoU Kolaborasi Riset</h4>
+                                    <p class="text-urban-silver text-xs line-clamp-2">Sinergi antara Universitas Janabadra dan para stakeholder industri F&B dalam membangun ekosistem bisnis berkelanjutan berbasis digital.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Custom Footer Card -->
+                            <div class="mt-5 flex items-center justify-between px-2 relative z-10">
+                                <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
+                                    <i class="fa-solid fa-bolt text-lg"></i> Sorotan Terbaru
+                                </span>
+                                <!-- 🛠️ TUTORIAL EDIT: 19. UBAH LINK INSTAGRAM SOROTAN -->
+                                <a href="https://www.instagram.com/p/DW-RfNsiYEO/" target="_blank" class="text-[10px] font-semibold text-urban-silver bg-white/10 px-3 py-1.5 rounded hover:bg-urban-blueLight hover:text-white transition-colors">
+                                    Lihat di Instagram <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <h3 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">Karya Ilmiah & Publikasi</h3>
-                <p class="text-urban-silver max-w-2xl mx-auto text-sm leading-relaxed mb-10">Jelajahi berbagai kontribusi penelitian yang berfokus pada pengembangan sistem, evaluasi, dan pendekatan manajemen berbasis bukti (evidence-based).</p>
-                
-                <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" rel="noopener noreferrer" class="btn-corporate py-4 px-8 text-sm uppercase tracking-widest shadow-lg">
-                    Kunjungi Google Scholar <i class="fa-solid fa-graduation-cap ml-3"></i>
-                </a>
             </div>
         </section>
 
         <!-- CONTACT SECTION -->
+        <!-- 🛠️ TUTORIAL EDIT: 20. UBAH BAGIAN KONTAK -->
         <section id="contact" class="py-24 relative z-10 academic-bg">
             <div class="profile-overlay opacity-95"></div>
             
@@ -742,6 +813,7 @@
                             </p>
                             
                             <div class="space-y-6 font-sans">
+                                <!-- 🛠️ TUTORIAL EDIT: UBAH EMAIL UNTUK KONTAK -->
                                 <div class="flex items-center gap-4 group cursor-default">
                                     <div class="w-12 h-12 rounded bg-urban-blueLight/10 flex items-center justify-center text-urban-blueLight border border-urban-blueLight/30 group-hover:bg-urban-blueLight group-hover:text-white transition-colors">
                                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
@@ -800,6 +872,7 @@
     </main>
 
     <!-- FOOTER -->
+    <!-- 🛠️ TUTORIAL EDIT: 21. UBAH BAGIAN FOOTER -->
     <footer class="bg-urban-darker border-t border-white/5 py-10 text-center relative z-20">
         <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
             
@@ -809,6 +882,7 @@
             </a>
             
             <div class="flex flex-wrap justify-center gap-4 mb-8" aria-label="Footer Social Media Links">
+                <!-- 🛠️ TUTORIAL EDIT: UBAH LINK MEDIA SOSIAL FOOTER -->
                 <a href="https://www.instagram.com/nadiaasyafaat/" target="_blank" title="Instagram" aria-label="Instagram" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 <a href="https://www.facebook.com/syafaat.nadia/" target="_blank" title="Facebook" aria-label="Facebook" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                 <a href="https://scholar.google.com/citations?user=SN-4DFgAAAAJ&hl=id" target="_blank" title="Google Scholar" aria-label="Google Scholar" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-urban-gray hover:text-white hover:bg-urban-blueLight transition-all"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
@@ -830,10 +904,11 @@
                     <i class="fa-solid fa-file-pdf text-red-500"></i> Proposal Soigné
                 </h3>
                 <div class="flex items-center gap-4">
-                    <a href="./Soigne Project Proposal.pdf" download id="pdf-download-btn" class="text-urban-silver hover:text-cyan-300 transition-colors" title="Unduh PDF">
+                    <!-- 🛠️ TUTORIAL EDIT: LINK DOWNLOAD/NEW TAB DIATUR OTOMATIS OLEH JAVASCRIPT DI BAWAH -->
+                    <a href="./Soigne%20Project%20Proposal.pdf" download id="pdf-download-btn" class="text-urban-silver hover:text-cyan-300 transition-colors" title="Unduh PDF">
                         <i class="fa-solid fa-download text-lg"></i>
                     </a>
-                    <a href="./Soigne Project Proposal.pdf" target="_blank" id="pdf-newtab-btn" class="text-urban-silver hover:text-cyan-300 transition-colors" title="Buka di Tab Baru">
+                    <a href="./Soigne%20Project%20Proposal.pdf" target="_blank" id="pdf-newtab-btn" class="text-urban-silver hover:text-cyan-300 transition-colors" title="Buka di Tab Baru">
                         <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i>
                     </a>
                     <div class="w-px h-6 bg-white/20"></div>
@@ -945,7 +1020,7 @@
                 const subject = document.getElementById('emailSubject').value;
                 const message = document.getElementById('emailMessage').value;
                 
-                // Siapkan tujuan dan format isi email
+                // 🛠️ TUTORIAL EDIT: 22. UBAH EMAIL TUJUAN UNTUK FORM KONTAK
                 const targetEmail = "nadia@ujb.ac.id";
                 const mailtoSubject = encodeURIComponent(subject);
                 const mailtoBody = encodeURIComponent(`Halo Nadia,\n\nNama: ${name}\nEmail Pengirim: ${email}\n\nPesan:\n${message}`);
@@ -988,7 +1063,9 @@
             counters.forEach(counter => counterObserver.observe(counter));
 
             // --- 5. MODULAR PDF VIEWER SYSTEM ---
-            const pdfFile = "./Soigne Project Proposal.pdf"; // Variabel dinamis letak file
+            // 🛠️ TUTORIAL EDIT: 23. UBAH NAMA FILE PDF ANDA DI SINI
+            // Pastikan jika ada spasi, diubah menjadi %20 (Contoh: "File%20Proposal.pdf")
+            const pdfFile = "Soigne%20Project%20Proposal.pdf"; // Variabel dinamis letak file
             
             const pdfModal = document.getElementById('pdf-modal');
             const pdfModalContent = document.getElementById('pdf-modal-content');
@@ -1036,26 +1113,31 @@
                 pdfError.classList.add('hidden');
                 pdfIframe.classList.add('hidden');
                 
-                // Validasi keberadaan file menggunakan FETCH HEAD
-                fetch(pdfFile, { method: 'HEAD' })
-                    .then(res => {
-                        if (res.ok) {
-                            // File ada, muat ke iframe
-                            pdfIframe.src = pdfFile + "#view=FitH&toolbar=0"; // Fit horizontal, tanpa toolbar default jika didukung
-                            pdfIframe.onload = () => {
-                                pdfLoading.classList.add('hidden');
-                                pdfIframe.classList.remove('hidden');
-                            };
-                        } else {
-                            throw new Error('File not found');
-                        }
-                    })
-                    .catch(err => {
-                        // Error handling elegan tanpa alert bawaan browser
-                        console.error('PDF Error:', err);
-                        pdfLoading.classList.add('hidden');
-                        pdfError.classList.remove('hidden');
-                    });
+                try {
+                    // Validasi keberadaan file menggunakan FETCH HEAD
+                    fetch(pdfFile, { method: 'HEAD' })
+                        .then(res => {
+                            if (res.ok) {
+                                // File ada, muat ke iframe
+                                pdfIframe.src = pdfFile + "#view=FitH&toolbar=0"; 
+                                pdfIframe.onload = () => {
+                                    pdfLoading.classList.add('hidden');
+                                    pdfIframe.classList.remove('hidden');
+                                };
+                            } else {
+                                throw new Error('File not found');
+                            }
+                        })
+                        .catch(err => {
+                            // Error handling elegan tanpa console.error agar bersih di log
+                            pdfLoading.classList.add('hidden');
+                            pdfError.classList.remove('hidden');
+                        });
+                } catch (err) {
+                    // Tangkap error sinkron jika URL gagal di-parse di environment sandbox/preview
+                    pdfLoading.classList.add('hidden');
+                    pdfError.classList.remove('hidden');
+                }
             };
 
             // Event Listeners PDF System
